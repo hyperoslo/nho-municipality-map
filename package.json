@@ -1,0 +1,15 @@
+{
+  "name": "nho-kommuner-map",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "gulp-sourcemaps": "^1.5.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

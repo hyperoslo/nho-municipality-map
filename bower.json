@@ -1,0 +1,16 @@
+{
+  "name": "nho-kommuner-map",
+  "version": "0.0.0",
+  "authors": [
+    "Ole Henrik Skogstrøm <ole.henrik@hyper.no>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}

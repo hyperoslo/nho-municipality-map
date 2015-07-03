@@ -1,0 +1,62 @@
+@import '../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss';
+@import 'base/css-reset.scss';
+@import 'base/form-css-reset.scss';
+body {
+  background-color: #C9E8E6;
+}
+.svg-bg {
+  fill: #C9E8E6;
+}
+.container {
+  max-width: 1000px;
+}
+.svg-container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+}
+.svg-content {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#kommune_kart {
+  a {
+    fill: #188BB2;
+  }
+}
+@mixin kommune {
+  .block {
+    fill: #673666;
+    stroke: #FEF28D;
+  }
+}
+.old-municipalities {
+  fill: #259AC2;
+}
+.new-municipalities {
+  fill: #188BB2;
+  fill-opacity: 0.01;
+  .new-municipality:hover {
+    fill-opacity: 0.8;
+  }
+}
+.old-names {
+  pointer-events: none;
+}
+.new-names {
+  pointer-events: none;
+}
+.kommune:hover {
+  @include kommune;
+}
+// $kommune_list: finnmark troms;
+// @each $kommune in $kommune_list {
+//   .#{$kommune}:hover {
+//     @include kommune;
+//   }
+// }
