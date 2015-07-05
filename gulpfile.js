@@ -19,5 +19,5 @@ gulp.task('watch', function () {
 });
 
 gulp.task('default', function() {
-  gulp.start(['bower','watch']);
+  gulp.start(['watch']);
 });

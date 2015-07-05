@@ -1,9 +1,21 @@
-@import '../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss';
 @import 'base/css-reset.scss';
 @import 'base/form-css-reset.scss';
 body {
-  background-color: #C9E8E6;
+  //background-color: #C9E8E6;
 }
+.zoomBtn {
+  position: fixed;
+  left: 20px;
+  height: 20px;
+  
+  &.inn {
+    top: 20px;
+  }
+  &.out {
+    top: 40px;
+  }
+}
+
 .svg-bg {
   fill: #C9E8E6;
 }
@@ -54,9 +66,3 @@ body {
 .kommune:hover {
   @include kommune;
 }
-// $kommune_list: finnmark troms;
-// @each $kommune in $kommune_list {
-//   .#{$kommune}:hover {
-//     @include kommune;
-//   }
-// }
