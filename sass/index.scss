@@ -1,7 +1,27 @@
 @import 'base/css-reset.scss';
 @import 'base/form-css-reset.scss';
+@font-face {
+    font-family: 'neosansregular';
+    src: url('../fonts/neosans-webfont.eot');
+    src: url('../fonts/neosans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/neosans-webfont.woff2') format('woff2'),
+         url('../fonts/neosans-webfont.woff') format('woff'),
+         url('../fonts/neosans-webfont.ttf') format('truetype'),
+         url('../fonts/neosans-webfont.svg#neosansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
   //background-color: #C9E8E6;
+  font-family: 'neosansregular';
+}
+.new-names {
+  font-family: 'neosansregular', helvetica;
+  text-shadow: 0px 0px 2px #000;
+}
+.old-names {
+  //filter: url(#old-name-shadow);
+  text-shadow: 0px 0px 2px #000;
 }
 .zoomBtn {
   position: fixed;
