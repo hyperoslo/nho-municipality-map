@@ -47,6 +47,9 @@ $(document).ready(function() {
       return this;
   };
 
+  Element.prototype.hasClass = function(className) {
+      return this.className && new RegExp("(^|\\s)" + className + "(\\s|$)").test(this.className);
+  };
 
   var mapSVG = Snap.select('#municipalities-map');
   var mapGroup = Snap.select('#map-container');
@@ -109,9 +112,40 @@ $(document).ready(function() {
     mapGroup.animate({ transform: 'translate(-' + scaledXOffset + ',-' + scaledYOffset + ') scale('+ scale*0.90 +')'}, animation);
   }
 
+  var backToMap = function(animation) {
+    $('.new-municipality').removeClassSVG('active')
+    mapGroup.animate({ transform: 'scale(1)'}, animation);
+  }
+
   $('.new-municipality').dblclick(function(){
+    $(this)
+    if ($(this).hasClass('active')) {
+      backToMap(300);
+      return;
+    };
     selectMunicipality($(this).attr('id'), 300);
   });
+
+  $('.new-municipality').doubletap(function(){
+    if ($(this).hasClass('active')) {
+      backToMap(300);
+      return;
+    };
+    selectMunicipality($(this).attr('id'), 300);
+  });
+
+  $('.svg-bg').dblclick(function() {
+    backToMap(300);
+  });
+
+  $('#municipality-selector').on('change', function() {
+    var selected = $(this).val();
+    if (selected == 'backToMap') {
+      backToMap(300);
+    } else {
+      selectMunicipality(selected, 300);
+    };
+  })
 
   // If linked directly with param m select the municipality with no animation
   if(queryParams.m) {

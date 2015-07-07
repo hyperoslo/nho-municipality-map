@@ -1,5 +1,6 @@
 @import 'base/css-reset.scss';
 @import 'base/form-css-reset.scss';
+@import 'variables.scss';
 @font-face {
     font-family: 'neosansregular';
     src: url('../fonts/neosans-webfont.eot');
@@ -12,16 +13,47 @@
     font-style: normal;
 }
 body {
-  //background-color: #C9E8E6;
+  background-color: $ocean-color;
   font-family: 'neosansregular';
+}
+.top-controls {
+  background-color: $controls-bg;
+  width: 100%;
+  height: 60px;
+  h1 {
+    margin: 15px 15px 15px 0px;
+    font-size: 28px;
+    color: $font-color;
+    display: inline-block;
+  }
+}
+#municipality-zip-selector {
+  float: right;
+}
+.back-controls {
+  font-size: 28px;
+  background-color: rgba(255,255,255,0.8);
+  position: absolute;
+  top: 80px;
+  left: 20px;
+}
+.slide-controls {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 10;
+  margin: 0 auto;
+  background-color: rgba(255,255,255,0.8);
+  padding: 5px 10px;
+  border-radius: 2px;
 }
 .new-names {
   font-family: 'neosansregular', helvetica;
-  text-shadow: 0px 0px 2px #000;
+  text-shadow: 0.6px 0.6px 3px rgba(0,0,0,0.50), -1px 0 #673666, 0 1px #673666, 1px 0 #673666, 0 -1px #673666;
 }
 .old-names {
-  //filter: url(#old-name-shadow);
-  text-shadow: 0px 0px 2px #000;
+  text-shadow: 0.6px 0.6px 1px rgba(0,0,0,0.50);
 }
 .zoomBtn {
   position: fixed;
