@@ -54,35 +54,6 @@ $(document).ready(function() {
   var mapGroup = Snap.select('#map-container');
   mapGroup.altDrag();
 
-  //mapScaleGroup.attr('transform', 'scale(2)' );
-
-  //window.seeCords = function() {
-  //  var bbox = mapGroup.getBBox();
-  //  var cx = bbox.cx //+(bbox.width/2)
-  //  var cy = bbox.cy //+(bbox.height/2);
-  //}
-
-  window.zoomInn = function() {
-    var oldScale = mapGroup.attr('transform').local.match(/[0-9.]+/) || [1.0];
-    scale = ((+oldScale[0])+0.2);
-    console.log(parseFloat(scale), oldScale);
-    window.scaleMap(parseFloat(scale));
-  }
-
-  window.zoomOut = function() {
-    var oldScale = mapGroup.attr('transform').local.match(/[0-9.]+/) || [1.0];
-    scale = ((+oldScale[0])-0.2);
-    console.log(parseFloat(scale), oldScale);
-    window.scaleMap(parseFloat(scale));
-  }
-
-  window.getInfo = function() {
-    //alert(JSON.stringify(mapGroup.getBBox()) );
-    var bbox = mapGroup.getBBox();
-    console.log("bbox", mapGroup.getBBox() );
-    console.log("center", (bbox.width/2) - bbox.x )
-  }
-
   var selectMunicipality = function(muni, animation) {
     if(muni) {
       bbox = Snap.select('#'+muni).getBBox();
@@ -96,24 +67,43 @@ $(document).ready(function() {
 
     maxSize = bbox.width >= bbox.height ? bbox.width : bbox.height;
 
-    // Calculate the offset for the piece and add the half the remaining width/height of the view.
-    // Can't find the remaining width of the view so using the size of the piece
-    xoffset = (bbox.x + 676.0 - ((maxSize)/4));
-    yoffset = (bbox.y + 79.5 - ((maxSize)/4));
+    // viewbox offset
+    offset = ((4000-4000/scale)/2);
 
-    // do not accept offsets bellow 0
-    scaledXOffset = xoffset > 0 ? xoffset * (scale*0.90) : 0;
-    scaledYOffset = yoffset > 0 ? yoffset * (scale*0.90) : 0;
+    var viewSize = (4000/scale) 
 
     $('.new-municipality').removeClassSVG('active')
     $('#'+muni).addClassSVG('active');
 
-    mapGroup.animate({ transform: 'translate(-' + scaledXOffset + ',-' + scaledYOffset + ') scale('+ scale*0.90 +')'}, animation);
+    mapGroup.animate({ transform: 'translate(' + (2000-bbox.cx-676.1) + ',' + (2000-bbox.cy -72.5) + ')'}, animation);
+    Snap.animate(mapSVG.attr("viewBox").vb.split(" "), [ offset, offset, viewSize, viewSize ], function(values){ mapSVG.attr("viewBox", values.join(" ")); }, animation)
+  }
+
+  window.scaleMap = function(scale) {
+    offset = ((4000-4000/scale)/2);
+    viewSize = (4000 / scale);
+    //mapSVG.animate( {attr: 'viewBox', offset+' '+offset+' '+viewSize+' '+viewSize}  );
+    Snap.animate(mapSVG.attr("viewBox").vb.split(" "), [ offset, offset, viewSize, viewSize ], function(values){ mapSVG.attr("viewBox", values.join(" ")); }, 200)
+  }
+
+  window.zoomInn = function() {
+    var viewBox = mapSVG.attr('viewBox');
+    var oldScale = (4000/viewBox.width);
+    scale = ((+oldScale)*1.3);
+    scaleMap(scale);
+  }
+
+  window.zoomOut = function() {
+    var viewBox = mapSVG.attr('viewBox');
+    var oldScale = (4000/viewBox.width);
+    scale = ((+oldScale)/1.3);
+    scaleMap(scale);
   }
 
   var backToMap = function(animation) {
     $('.new-municipality').removeClassSVG('active')
-    mapGroup.animate({ transform: 'scale(1)'}, animation);
+    mapGroup.animate({ transform: 'translate(0,0)'}, animation);
+    Snap.animate(mapSVG.attr("viewBox").vb.split(" "), [ 0, 0, 4000, 4000 ], function(values){ mapSVG.attr("viewBox", values.join(" ")); }, animation)
   }
 
   $('.new-municipality').dblclick(function(){
@@ -159,61 +149,6 @@ $(document).ready(function() {
     animation_duration = parseInt(queryParams.d) || 0;
     selectMunicipality(queryParams.m, animation_duration);
   }
-
-
-  window.scaleMap = function(scale) {
-    var oldScale = mapGroup.attr('transform').local.match(/[0-9]+/) || 1;
-    var position = mapGroup.attr('transform').local.match(/([^t,][0-9.]+)/g);
-
-
-    if(position == undefined) {
-      position = [0,0];
-    }
-
-    var horizontalPosition = parseFloat(position[0]) || 0.0;
-    var verticalPosition = parseFloat(position[1]) || 0.0;
-
-    var bbox = mapGroup.getBBox();
-
-    var cx = (bbox.x + bbox.width)/2;
-    var cy = (bbox.y + bbox.height)/2;   // finding center of element
-
-    cx2 = cx //cx //- (parseFloat(position[0]) * scale);
-    cy2 = cy //cy //- (parseFloat(position[1]) * scale);
-
-
-
-    // Shift the image so that the middle is in the upper left corner taking into account the amout of scaling;
-    //mapGroup.attr('transform', 'translate(-' +(cx2-(scale*cx2)) + ', -' + (cy2-(scale*cy2)) + ')');
-    // scale the image
-    mapGroup.attr('transform', 'scale('+ scale +')');
-    // Shift the image back again
-    mapGroup.attr('transform', 'translate(' + (cx2-(scale*cx2)) + ', ' + (cy2-(scale*cy2)) + ')');
-
-
-
-    //mapGroup.attr('transform', 'matrix( 1, 0, 0, 1, ' + (cx2-(scale*cx2)) + ' ' + (cy2-(scale*cy2)) + ')')
-
-    //console.log(scale, scale, scale/oldScale);
-
-    //var scaleValue = (scale/oldScale);
-
-    //if(position == undefined) {
-    //  mapGroup.attr('transform', 'scale(' +  scale +') transform(-400 -400)');
-    //}
-
-    //var verticalPosition = position[0] || 0;
-    //var horizontalPosition = position[1] || 0;
-
-    //mapGroup.transform('t'+ (position[0] * scaleValue) + ',' + (position[1] * scaleValue) )
-    //mapGroup.attr('transform', 'matrix(' + scale + ' 0 0 ' + scale + ' ' + verticalPosition + ' ' + horizontalPosition + ')');
-    //console.log(position, mapGroup.attr('transform'));
-    //mapScaleGroup.attr('transform', 'scale(' + scale + ')')
-    //mapGroup.attr('transform', 'translate(' + (verticalPosition*3) + ' ' + (horizontalPosition*3) + ')');
-  }
-
-
-
 
 
 });

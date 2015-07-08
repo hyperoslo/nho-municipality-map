@@ -68,6 +68,7 @@
   </div>
 
   <div class="svg-container">
+    <!-- div class="middle"></div -->
     <svg id="municipalities-map" class="svg-content" viewBox="0 0 4000 4000" preserveAspectRatio="xMidYMid meet" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
         <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
         <title>Artboard 1</title>
@@ -100,8 +101,6 @@
             <g id="map-scaler" sketch:type="MSArtboardGroup">
                   
               <rect class="svg-bg" width="8000" height="8000" transform="translate(-2000, -2000)"/>
-
-              <!-- rect width="25" height="25" fill="#000000" transform="translate(1999, 1999)"/-->
 
               <g class="old-municipalities" id="Gamle" transform="translate(676.000000, 79.500000)">
 
@@ -2269,10 +2268,11 @@
             </g>
         </g>
     </svg>
-    <!-- a link="#0" onclick="zoomInn()" class="zoomBtn inn">Zoom inn</a -->
-    <!-- a link="#0" onclick="zoomOut()" class="zoomBtn out">Zoom Out</a-->
-    <!-- a link="#0" onclick="getInfo()" class="zoomBtn info">Zoom info</a-->
-  
+    <div class="zoom-ctrl">
+      <a link="#0" onclick="zoomInn()" class="zoomBtn inn">&plus;</a>
+      <a link="#0" onclick="zoomOut()" class="zoomBtn out">&minus;</a>
+      <!-- <a link="#0" onclick="getInfo()" class="zoomBtn info">Zoom info</a> -->
+    </div>
   </div>
 </body>
 </html>
