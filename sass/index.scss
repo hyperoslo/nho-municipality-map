@@ -69,12 +69,8 @@ body {
     top: 40px;
   }
 }
-
 .svg-bg {
-  fill: #C9E8E6;
-}
-.container {
-  max-width: 1000px;
+  fill: $ocean-color;
 }
 .svg-container {
   display: inline-block;
@@ -91,30 +87,19 @@ body {
   top: 0;
   left: 0;
 }
-#kommune_kart {
-  a {
-    fill: #188BB2;
-  }
-}
-@mixin kommune {
-  .block {
-    fill: #673666;
-    //stroke: #FEF28D;
-  }
-}
 .old-municipalities {
-  fill: #259AC2;
+  fill: $map-color;
 }
 .new-municipalities {
-  fill: #188BB2;
+  fill: $map-hover-color;
   fill-opacity: 0.01;
   .new-municipality:hover {
     fill-opacity: 0.8;
   }
 }
 .new-municipalities .active {
-  fill: #673666;
-  stroke: #fff;
+  fill: $map-selected-color;
+  stroke: $map-seelcted-stroke-color;
   fill-opacity: 0.8;
   .ocean {
     stroke-opacity: 0.01;
@@ -125,7 +110,4 @@ body {
 }
 .new-names {
   pointer-events: none;
-}
-.kommune:hover {
-  @include kommune;
 }

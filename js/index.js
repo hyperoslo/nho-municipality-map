@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
 
   jQuery.extend({
@@ -136,6 +135,14 @@ $(document).ready(function() {
 
   $('.svg-bg').dblclick(function() {
     backToMap(300);
+  });
+
+  $('#municipality-selector').select2({
+    placeholder: "Velg kommune"
+  });
+
+  $('#municipality-selector').select2({
+    placeholder: "Velg kommune"
   });
 
   $('#municipality-selector').on('change', function() {
