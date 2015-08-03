@@ -120,11 +120,8 @@ $(document).ready(function() {
   });
 
   $('#municipality-selector').select2({
-    placeholder: "Velg kommune"
-  });
-
-  $('#municipality-selector').select2({
-    placeholder: "Velg kommune"
+    placeholder: "Velg kommune",
+    width: '100%'
   });
 
   $('#municipality-selector').on('change', function() {

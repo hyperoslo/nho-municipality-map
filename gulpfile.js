@@ -31,7 +31,7 @@ gulp.task('js', function () {
 });
 
 gulp.task('sass', function () {
-  gulp.src('./sass/**/*.scss')
+  gulp.src('./sass/index.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(sass({outputStyle: 'compressed'}))
     .pipe(sourcemaps.init())

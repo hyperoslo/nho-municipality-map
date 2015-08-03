@@ -1,0 +1,45 @@
+.svg-bg {
+  fill: $ocean-color;
+}
+.svg-container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+}
+.svg-content {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.old-municipalities {
+  fill: $map-color;
+}
+.new-municipalities {
+  fill: $map-hover-color;
+  fill-opacity: 0.01;
+  .new-municipality:hover {
+    fill-opacity: 0.8;
+  }
+}
+.new-municipalities .active {
+  fill: $map-selected-color;
+  stroke: $map-seelcted-stroke-color;
+  fill-opacity: 0.8;
+  .ocean {
+    stroke-opacity: 0.01;
+  }
+}
+.new-names {
+  font-family: 'neosans', helvetica;
+  text-shadow: 0.6px 0.6px 3px rgba(0,0,0,0.50), -1px 0 #673666, 0 1px #673666, 1px 0 #673666, 0 -1px #673666;
+  pointer-events: none;
+}
+.old-names {
+  text-shadow: 0.6px 0.6px 1px rgba(0,0,0,0.50);
+  pointer-events: none;
+}
