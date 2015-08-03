@@ -112,19 +112,11 @@ $(document).ready(function() {
       backToMap(300);
       return;
     };
-    selectMunicipality($(this).attr('id'), 300);
-  });
-
-  $('.new-municipality').doubletap(function(){
-    if ($(this).hasClass('active')) {
-      backToMap(300);
-      return;
-    };
-    selectMunicipality($(this).attr('id'), 300);
+    selectMunicipality($(this).attr('id'), 500);
   });
 
   $('.svg-bg').dblclick(function() {
-    backToMap(300);
+    backToMap(500);
   });
 
   $('#municipality-selector').select2({
@@ -138,9 +130,9 @@ $(document).ready(function() {
   $('#municipality-selector').on('change', function() {
     var selected = $(this).val();
     if (selected == 'backToMap') {
-      backToMap(300);
+      backToMap(500);
     } else {
-      selectMunicipality(selected, 300);
+      selectMunicipality(selected, 500);
     };
   })
 
