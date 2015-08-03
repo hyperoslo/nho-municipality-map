@@ -78,25 +78,7 @@
           Map of Norway
       </desc>
       <defs>
-          <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="old-name-shadow">
-              <feOffset dx=".3" dy=".6" in="SourceAlpha" result="shadowOffsetOuter1"/>
-              <feGaussianBlur stdDeviation=".5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
-              <feMerge>
-                  <feMergeNode in="shadowMatrixOuter1"/>
-                  <feMergeNode in="SourceGraphic"/>
-              </feMerge>
-          </filter>
-          <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="new-name-filter">
-              <feOffset dx=".6" dy=".6" in="SourceAlpha" result="shadowOffsetOuter1"/>
-              <feGaussianBlur stdDeviation=".5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
-              <feOffset dx=".3" dy=".3" in="SourceAlpha" result="shadowOffsetOuter2"/>
-              <feGaussianBlur in="shadowOffsetOuter2" result="shadowBlurOuter2"/>
-              <feMerge>
-                  <feMergeNode in="shadowMatrixOuter1"/>
-                  <feMergeNode in="shadowMatrixOuter2"/>
-                  <feMergeNode in="SourceGraphic"/>
-              </feMerge>
-          </filter>
+
       </defs>
       <g id="map-container" fill="none" fill-rule="evenodd">
           <path class="svg-bg" d="M-2000-2000h8000v8000h-8000z"/>
