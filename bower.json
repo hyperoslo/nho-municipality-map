@@ -12,6 +12,7 @@
     "tests"
   ],
   "devDependencies": {
-    "compass-breakpoint": "~2.6.1"
+    "compass-breakpoint": "~2.6.1",
+    "bourbon": "~4.2.3"
   }
 }
