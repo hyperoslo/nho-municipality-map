@@ -121,7 +121,12 @@ $(document).ready(function() {
 
   $('#municipality-selector').select2({
     placeholder: "Velg kommune",
-    width: '100%'
+    width: '100%',
+    "language": {
+       "noResults": function(){
+           return "Ingen kommuner";
+       }
+    }
   });
 
   $('#municipality-selector').on('change', function() {

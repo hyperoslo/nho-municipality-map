@@ -1,13 +1,66 @@
 .slide-controls {
+  width: 745px;
   position: absolute;
-  bottom: 3%;
+  bottom: 15px;
   left: 50%;
-  transform: translate(-50%);
+  transform: translateX(-50%);
   z-index: 10;
-  margin: 0 auto;
-  background-color: rgba(255,255,255,0.8);
+  a.map-state {
+    float: left;
+    width: 65px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: $font-color;
+    font-size: 15px;
+    background-color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    &.active {
+      background-image: linear-gradient(-180deg, #2399C1 50%, #1C7E9F 100%);
+      color: white;
+      font-weight: 400;
+    }
+  }
+}
+.zoom-container {
+  float: left;
+  margin: 0 5px;
+  background-color: white;
   padding: 5px 10px;
-  border-radius: 2px;
+  border-radius: 1px;
+  color: $font-color;
+  width: 600px;
+  font-size: 15px;
+  height: 50px;
+  .zoom-label {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    float: left;
+    margin: 0px 20px;
+    -webkit-user-select: none;  
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+  a.zoomBtn {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    float: left;
+    color: #858E99;
+    font-size: 25px;
+    &.inn {
+      margin-top: 5px;
+    }
+  }
+  .slider-container {
+    position: relative;
+    transform: translateY(-50%);
+    float: left;
+    margin: 20px 10px;
+    width: calc(100% - 170px);
+  }
 }
 input[type=range].slider {
   -webkit-appearance: none;

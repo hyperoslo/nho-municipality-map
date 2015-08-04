@@ -43,5 +43,6 @@
 }
 body {
   // background-color: $ocean-color;
-  font-family: 'neosans';
+  font-family: $font;
+  font-weight: 300;
 }
