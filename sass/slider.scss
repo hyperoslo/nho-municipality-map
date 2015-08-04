@@ -1,12 +1,18 @@
 .slide-controls {
-  width: 745px;
+  width: calc(100% - 120px);
+  @include breakpoint(max-width 650px) {
+    width: calc(100% - 40px);
+  }
+  @include breakpoint(max-width 450px) {
+    width: calc(100% - 20px);
+  }
   position: absolute;
   bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
   a.map-state {
-    float: left;
+    float: right;
     width: 65px;
     height: 50px;
     line-height: 50px;
@@ -21,19 +27,31 @@
       color: white;
       font-weight: 400;
     }
+    &.before {
+      border-radius: 1px 0px 0px 1px;
+    }
+    &.after {
+      border-radius: 0px 1px 1px 0px;
+    }
   }
 }
 .zoom-container {
   float: left;
-  margin: 0 5px;
   background-color: white;
   padding: 5px 10px;
   border-radius: 1px;
   color: $font-color;
-  width: 600px;
+  width: calc(100% - 140px);
   font-size: 15px;
   height: 50px;
+  @include breakpoint(max-width 450px) {
+    background-color: transparent;
+    padding: 0px;
+  }
   .zoom-label {
+    @include breakpoint(max-width 650px) {
+      display: none;
+    }
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -45,21 +63,44 @@
   }
   a.zoomBtn {
     position: relative;
+    background-color: white;
+    line-height: 45px;
+    vertical-align: text-top;
     top: 50%;
     transform: translateY(-50%);
     float: left;
     color: #858E99;
     font-size: 25px;
+    @include breakpoint(max-width 450px) {
+      width: 65px;
+      text-align: center;
+    }
     &.inn {
-      margin-top: 5px;
+      @include breakpoint(max-width 450px) {
+        border-radius: 0px 1px 1px 0px;
+      }
+      padding-top: 5px;
+    }
+    &.out {
+      padding-bottom: 5px;
+      @include breakpoint(max-width 450px) {
+        border-right: 1px solid #D8D8D8;
+        border-radius: 1px 0px 0px 1px;
+      }
     }
   }
   .slider-container {
+    width: calc(100% - 170px);
+    @include breakpoint(max-width 650px) {
+      width: calc(100% - 65px);
+    }
+    @include breakpoint(max-width 450px) {
+      display: none;
+    }
     position: relative;
     transform: translateY(-50%);
     float: left;
     margin: 20px 10px;
-    width: calc(100% - 170px);
   }
 }
 input[type=range].slider {

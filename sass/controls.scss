@@ -1,20 +1,19 @@
 @import 'slider.scss';
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #000;
-  z-index: 1000;
-}
 .top-controls {
   background-color: $controls-bg;
   width: 100%;
   height: 40px;
   margin-top: 20px;
   margin-bottom: 20px;
+  @include breakpoint(max-width 735px) {
+    height: 65px;
+    margin: 7px 20px 8px;
+    width: calc(100% - 40px);
+  }
+  @include breakpoint(max-width 450px) {
+    margin: 7px 10px 8px;
+    width: calc(100% - 20px);
+  }
   h1 {
     margin-top: 5px;
     display: inline-block;
@@ -27,10 +26,21 @@
     background-position: right 10px center;
     background-repeat: no-repeat;
     padding-right: 24px;
+    @include breakpoint(max-width 735px) {
+      margin-bottom: 5px;
+      font-size: 24px;
+      background-image: none;
+      clear: both;
+      display: block;
+      width: 100%;
+    }
   }
 }
 .select2-responsive {
   width: 250px;
+  @include breakpoint(max-width 735px) {
+    width: 150px;
+  }
   display: inline-block;
   float: left;
 }
@@ -48,6 +58,11 @@
   color: $font-color;
   font-size: 20px;
   font-weight: 300;
+  @include breakpoint(max-width 735px) {
+    font-size: 15px;
+    line-height: 28px;
+    width: 100px;
+  }
 }
 .back-controls {
   font-size: 28px;
@@ -56,22 +71,4 @@
   top: 80px;
   left: 20px;
 }
-.zoom-ctrl {
-  position: fixed;
-  left: 40px;
-  bottom: 40px;
-  width: 40px;
-  text-align: center;
-  .inn {
-    font-size: 30px;
-    bottom: 30px;
-    background-color: rgba(255,255,255,0.8);
-    display: block;
-  }
-  .out {
-    font-size: 30px;
-    bottom: 40px;
-    background-color: rgba(255,255,255,0.8);
-    display: block;
-  }
-}
+

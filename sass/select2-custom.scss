@@ -3,17 +3,28 @@
   border: none;
   background-color: #188CB4;
   height: 38px;
+  @include breakpoint(max-width 735px) {
+    height: 30px;
+  }
   .select2-selection__rendered {
     color: white;
     font-size: 22px;
     font-weight: 300;
     line-height: 38px;
     padding-right: 45px;
+    @include breakpoint(max-width 735px) {
+      line-height: 30px;
+      font-size: 15px;
+    }
   }
   .select2-selection__arrow {
     background-color: #005D7E;
     width: 38px;
     height: 38px;
+    @include breakpoint(max-width 735px) {
+      width: 30px;
+      height: 30px;
+    }
     top: 0;
     right: 0;
     @include retina-image('../images/arrow-dropdown', 7px 12px, 'png', '../images/arrow-dropdown@2x', 'png');
