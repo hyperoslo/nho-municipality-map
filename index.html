@@ -10,6 +10,7 @@
   <!-- bower:js -->
   <!-- endbower -->
   <script src="js/snap.svg-min.js" charset="utf-8"></script>
+
   <script src="js/index.js" charset="utf-8"></script>
   <link rel="stylesheet" href="css/index.css">
 </head>
@@ -46,7 +47,7 @@
       <label for="zoom" class="zoom-label">Kart zoom</label>
       <a link="#0" onclick="zoomOut()" class="zoomBtn out"><img src="images/minus.png" alt="minus-btn"></a>
       <div class="slider-container">
-        <input class="slider" type="range" name="zoom" id="zoom" value="0" min="0" max="100">
+        <input class="slider" type="range" name="zoom" id="zoom" value="1" min="0.9" max="20" step="0.1">
       </div>
       <a link="#0" onclick="zoomInn()" class="zoomBtn inn"><img src="images/pluss.png" alt="pluss-btn"></a>
     </div>

@@ -63,14 +63,16 @@ $(document).ready(function() {
 
     // Choose the lowes scale so that the whole piece fits 
     scale = maxWidthScale <= maxHeightScale ? maxWidthScale: maxHeightScale;
-    scale = scale * 0.8
+    scale = scale * 0.75
 
     maxSize = bbox.width >= bbox.height ? bbox.width : bbox.height;
 
     // viewbox offset
     offset = ((4000-4000/scale)/2);
 
-    var viewSize = (4000/scale) 
+    var viewSize = (4000/scale)
+
+    $('#zoom').val(scale)
 
     $('.new-municipality').removeClassSVG('active')
     $('#'+muni).addClassSVG('active');
@@ -82,29 +84,44 @@ $(document).ready(function() {
   window.scaleMap = function(scale) {
     offset = ((4000-4000/scale)/2);
     viewSize = (4000 / scale);
-    //mapSVG.animate( {attr: 'viewBox', offset+' '+offset+' '+viewSize+' '+viewSize}  );
+
     Snap.animate(mapSVG.attr("viewBox").vb.split(" "), [ offset, offset, viewSize, viewSize ], function(values){ mapSVG.attr("viewBox", values.join(" ")); }, 200)
+    $('#zoom').val(scale)
   }
 
   window.zoomInn = function() {
     var viewBox = mapSVG.attr('viewBox');
     var oldScale = (4000/viewBox.width);
-    scale = ((+oldScale)*1.3);
+    scale = ((+oldScale)*1.2);
+    if(scale >=20) {
+      return;
+    }
     scaleMap(scale);
+    $('#zoom').val(scale)
   }
 
   window.zoomOut = function() {
     var viewBox = mapSVG.attr('viewBox');
     var oldScale = (4000/viewBox.width);
-    scale = ((+oldScale)/1.3);
+    scale = ((+oldScale)/1.2);
+    if(scale <=0.9) {
+      return;
+    }
     scaleMap(scale);
+    $('#zoom').val(scale)
   }
 
   var backToMap = function(animation) {
+    $('#zoom').val(1)
     $('.new-municipality').removeClassSVG('active')
     mapGroup.animate({ transform: 'translate(0,0)'}, animation);
     Snap.animate(mapSVG.attr("viewBox").vb.split(" "), [ 0, 0, 4000, 4000 ], function(values){ mapSVG.attr("viewBox", values.join(" ")); }, animation)
   }
+
+  $('#zoom').on('input', function() {
+    window.scaleMap($(this).val());
+  });
+
 
   $('.new-municipality').dblclick(function(){
     $(this)
