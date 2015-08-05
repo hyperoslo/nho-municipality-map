@@ -131,6 +131,9 @@ $(document).ready(function() {
     }
   });
 
+  var updateZipLink = function(target) {
+    $('#download-zip').attr('href', 'zip/')
+  }
 
   $('.new-municipality').dblclick(function(){
     $(this)
