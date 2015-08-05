@@ -77,7 +77,7 @@ $(document).ready(function() {
     $('.new-municipality').removeClassSVG('active')
     $('#'+muni).addClassSVG('active');
 
-    mapGroup.animate({ transform: 'translate(' + (2000-bbox.cx-676.1) + ',' + (2000-bbox.cy -72.5) + ')'}, animation);
+    mapGroup.animate({ transform: 'translate(' + (2000-bbox.cx) + ',' + (2000-bbox.cy) + ')'}, animation);
     Snap.animate(mapSVG.attr("viewBox").vb.split(" "), [ offset, offset, viewSize, viewSize ], function(values){ mapSVG.attr("viewBox", values.join(" ")); }, animation)
   }
 

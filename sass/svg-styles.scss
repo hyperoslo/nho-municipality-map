@@ -22,10 +22,13 @@
 .new-municipalities {
   fill: $map-hover-color;
   fill-opacity: 0.01;
-  path:hover{
+  .ocean {
+    stroke: none;
+  }
+  .new-municipality:hover{
     fill-opacity: 0.8;
   }
-  path.ocean:hover {
+  .new-municipality.ocean:hover {
     fill-opacity: 0.01;
   }
 }
