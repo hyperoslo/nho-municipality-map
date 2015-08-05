@@ -92,7 +92,7 @@ $(document).ready(function() {
   window.zoomInn = function() {
     var viewBox = mapSVG.attr('viewBox');
     var oldScale = (4000/viewBox.width);
-    scale = ((+oldScale)*1.2);
+    scale = ((+oldScale)*1.3);
     if(scale >=20) {
       return;
     }
@@ -103,7 +103,7 @@ $(document).ready(function() {
   window.zoomOut = function() {
     var viewBox = mapSVG.attr('viewBox');
     var oldScale = (4000/viewBox.width);
-    scale = ((+oldScale)/1.2);
+    scale = ((+oldScale)/1.3);
     if(scale <=0.9) {
       return;
     }
@@ -120,6 +120,15 @@ $(document).ready(function() {
 
   $('#zoom').on('input', function() {
     window.scaleMap($(this).val());
+  });
+
+  $('#municipalities-map').bind('mousewheel', function(e) {
+    if(e.originalEvent.wheelDelta / 120 > 0) {
+      console.log(e.originalEvent.wheelDelta);
+      window.zoomInn();
+    } else {
+      window.zoomOut();
+    }
   });
 
 

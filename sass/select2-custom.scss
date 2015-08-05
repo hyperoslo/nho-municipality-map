@@ -27,7 +27,7 @@
     }
     top: 0;
     right: 0;
-    @include retina-image('../images/arrow-dropdown', 7px 12px, 'png', '../images/arrow-dropdown@2x', 'png');
+    @include retina-image('../images/arrow-dropdown', 12px 7px, 'png', '../images/arrow-dropdown@2x', 'png');
     background-position: center;
     background-repeat: no-repeat;
     b {
@@ -36,7 +36,7 @@
   }
 }
 .select2-container--open .select2-selection--single .select2-selection__arrow {
-  @include retina-image('../images/arrow-dropdown-active', 7px 12px, 'png', '../images/arrow-dropdown-active@2x', 'png');
+  @include retina-image('../images/arrow-dropdown-active', 12px 7px, 'png', '../images/arrow-dropdown-active@2x', 'png');
 }
 *:focus {
     outline: none;
@@ -54,7 +54,7 @@
     font-family: $font;
     height: 38px;
     padding: 14px 40px 10px 14px;
-    @include retina-image('../images/search', 7px 12px, 'png', '../images/search@2x', 'png');
+    @include retina-image('../images/search', 20px 21px, 'png', '../images/search@2x', 'png');
     background-position: right 10px center;
     background-repeat: no-repeat;  
 }
