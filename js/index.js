@@ -8,6 +8,8 @@ $(document).ready(function() {
 
   var queryParams = $.getQueryParameters();
 
+  var noClicking = false;
+
   Snap.plugin( function( Snap, Element, Paper, global ) {
         Element.prototype.altDrag = function() {
         this.drag( dragMove, dragStart, dragEnd );
@@ -15,21 +17,33 @@ $(document).ready(function() {
       }
          
       var dragStart = function ( x,y,ev ) {
+        noClicking = true;
+        if( (typeof x == 'object') && ( x.type == 'touchstart') ) {
+            x.preventDefault();
+            this.data('ox', x.changedTouches[0].clientX );
+            this.data('oy', x.changedTouches[0].clientY );  
+        }
         this.data('ot', this.transform().local );
+        return false;
       }
   
       var dragMove = function(dx, dy, ev, x, y) {
         var tdx, tdy;
         var snapInvMatrix = this.transform().diffMatrix.invert();
         snapInvMatrix.e = snapInvMatrix.f = 0; 
-        tdx = snapInvMatrix.x( dx,dy ); tdy = snapInvMatrix.y( dx,dy );
+        tdx = snapInvMatrix.x( dx,dy ); 
+        tdy = snapInvMatrix.y( dx,dy );
         this.transform( "t" + [ tdx, tdy ] + this.data('ot')  );
       }
 
-      var dragEnd = function() {
-      
+      var dragEnd = function(eve) {
+        
       }
   });
+
+
+
+
 
   $.fn.addClassSVG = function(className){
       $(this).attr('class', function(index, existingClassNames) {
@@ -52,7 +66,16 @@ $(document).ready(function() {
 
   var mapSVG = Snap.select('#municipalities-map');
   var mapGroup = Snap.select('#map-container');
+
+
   mapGroup.altDrag();
+
+
+
+
+  var dragMoveListener = function(event) {
+    console.log("test");
+  }
 
   var selectMunicipality = function(muni, animation) {
     if(muni) {
@@ -112,6 +135,10 @@ $(document).ready(function() {
   }
 
   var backToMap = function(animation) {
+    if (noClicking) {
+      noClicking = false;
+      return;
+    };
     $('#zoom').val(1)
     $('.new-municipality').removeClassSVG('active')
     mapGroup.animate({ transform: 'translate(0,0)'}, animation);
@@ -132,11 +159,15 @@ $(document).ready(function() {
   });
 
   var updateZipLink = function(target) {
+
     $('#download-zip').attr('href', 'zip/')
   }
 
-  $('.new-municipality').dblclick(function(){
-    $(this)
+  $('.new-municipality').click(function(){
+    if (noClicking) {
+      noClicking = false;
+      return;
+    };
     if ($(this).hasClass('active')) {
       backToMap(300);
       return;
@@ -144,7 +175,19 @@ $(document).ready(function() {
     selectMunicipality($(this).attr('id'), 500);
   });
 
-  $('.svg-bg').dblclick(function() {
+  $('.new-municipality').on( "tap", function( event ) { 
+    if ($(this).hasClass('active')) {
+      backToMap(300);
+      return;
+    };
+    selectMunicipality($(this).attr('id'), 500);
+   });
+
+  $('.svg-bg').click(function() {
+    backToMap(500);
+  });
+
+  $('.svg-bg').on( "tap", function( event ) { 
     backToMap(500);
   });
 
