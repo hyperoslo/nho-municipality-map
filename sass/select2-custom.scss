@@ -56,12 +56,19 @@
     padding: 14px 40px 10px 14px;
     @include retina-image('../images/search', 20px 21px, 'png', '../images/search@2x', 'png');
     background-position: right 10px center;
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat;
+    @include breakpoint(max-width 735px) {
+      height: 30px;
+      line-height: 30px;
+    }  
 }
 ul.select2-results__options {
   background-color: #005D7E;
   color: white;
   font-size: 18px;
+  @include breakpoint(max-width 735px) {
+    font-size: 15px;
+  }
 }
 .select2-results__option {
   padding: 10px 14px 5px;
