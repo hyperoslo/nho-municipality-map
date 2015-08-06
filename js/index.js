@@ -69,6 +69,8 @@ $(document).ready(function() {
   var selectMunicipality = function(muni, animation) {
     if(muni) {
       bbox = Snap.select('#'+muni).getBBox();
+      var iframeLink = $('#embed-content').val();
+      $('#embed-content').val(iframeLink.replace(/\?m=(.+?)&/, '?m=' + muni + '&'));
     }
     maxWidthScale = (4000.0/bbox.width);
     maxHeightScale = (4000.0/bbox.height);
@@ -142,6 +144,8 @@ $(document).ready(function() {
       noClicking = false;
       return;
     };
+    var iframeLink = $('#embed-content').val();
+    $('#embed-content').val(iframeLink.replace(/\?m=(.+?)&/, '?m=###&'));
     $('#zoom').val(1)
     $('.new-municipality').removeClassSVG('active')
     mapGroup.animate({ transform: 'translate(0,0)'}, animation);
@@ -199,8 +203,6 @@ $(document).ready(function() {
        }
     }
   });
-
-  console.log($('#municipality-selector').val());
 
   $('#municipality-selector').on('change', function() {
     var selected = $(this).val();
