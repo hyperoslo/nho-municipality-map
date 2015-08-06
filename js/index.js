@@ -112,18 +112,18 @@ $(document).ready(function() {
     $('#zoom').val(scale)
   }
 
-  window.zoomInn = function() {
+  var zoomInn = function() {
     var viewBox = mapSVG.attr('viewBox');
     var oldScale = (4000/viewBox.width);
     scale = ((+oldScale)*1.3);
-    if(scale >=20) {
+    if(scale >=25) {
       return;
     }
     scaleMap(scale);
     $('#zoom').val(scale)
   }
 
-  window.zoomOut = function() {
+  var zoomOut = function() {
     var viewBox = mapSVG.attr('viewBox');
     var oldScale = (4000/viewBox.width);
     scale = ((+oldScale)/1.3);
@@ -133,6 +133,20 @@ $(document).ready(function() {
     scaleMap(scale);
     $('#zoom').val(scale)
   }
+
+  $('#zoomInn').on('click', function() {
+    zoomInn()
+  });
+  $('#zoomOut').on('click', function() {
+    zoomOut()
+  });
+
+  $('#zoomInn').on('tap', function() {
+    zoomInn()
+  });
+  $('#zoomOut').on('tap', function() {
+    zoomOut()
+  });
 
   var backToMap = function(animation) {
     if (noClicking) {
@@ -151,10 +165,9 @@ $(document).ready(function() {
 
   $('#municipalities-map').bind('mousewheel', function(e) {
     if(e.originalEvent.wheelDelta / 120 > 0) {
-      console.log(e.originalEvent.wheelDelta);
-      window.zoomInn();
+      zoomInn();
     } else {
-      window.zoomOut();
+      zoomOut();
     }
   });
 
@@ -168,10 +181,6 @@ $(document).ready(function() {
       noClicking = false;
       return;
     };
-    if ($(this).hasClass('active')) {
-      backToMap(300);
-      return;
-    };
     selectMunicipality($(this).attr('id'), 500);
   });
 
@@ -183,11 +192,11 @@ $(document).ready(function() {
     selectMunicipality($(this).attr('id'), 500);
    });
 
-  $('.svg-bg').click(function() {
+  $('.svg-bg').on( "tap", function( event ) { 
     backToMap(500);
   });
 
-  $('.svg-bg').on( "tap", function( event ) { 
+  $('.svg-bg').click(function() {
     backToMap(500);
   });
 

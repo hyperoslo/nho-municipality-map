@@ -55,6 +55,18 @@ gulp.task('watch', ['sass', 'fonts', 'images', 'js', 'zip'], function () {
   gulp.watch('./images/**/*.{jpg,jpeg,png,svg,gif}', ['images']);
 });
 
+gulp.task('server', function(cb) {
+   var spawn = require('child_process').spawn;
+   var log = function(data){ console.log("[Divshot] " + data.toString().trim()); }
+
+   var server = spawn('divshot', ['server', '--port', '3000']);
+
+   server.on('error', function(error) { console.log(error.stack) });
+   server.stdout.on('data', log);
+   server.stderr.on('data', log);
+});
+
 gulp.task('default', ['clean'], function() {
   gulp.start(['watch']);
+  gulp.start(['server']);
 });
