@@ -75,7 +75,7 @@ $(document).ready(function() {
 
     // Choose the lowes scale so that the whole piece fits 
     scale = maxWidthScale <= maxHeightScale ? maxWidthScale: maxHeightScale;
-    scale = scale * 0.75
+    scale = scale * 0.5
 
     maxSize = bbox.width >= bbox.height ? bbox.width : bbox.height;
 
@@ -199,6 +199,8 @@ $(document).ready(function() {
        }
     }
   });
+
+  console.log($('#municipality-selector').val());
 
   $('#municipality-selector').on('change', function() {
     var selected = $(this).val();
