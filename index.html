@@ -29,6 +29,13 @@
     <a href="zip/nye-kommuner.zip" target="_blank" class="download-zip" id="download-zip">Last ned .zip</a>
   </div>
 
+  <div class="nho-embed-modal">
+    <div class="dismiss-container">
+      <a href="#0" class="dismiss-modal">&times;</a>
+    </div>
+    <textarea name="embed" id="embed-content"><iframe src="http://nho-municipality-map.divshot.io/?m=####&d=300" frameborder="0" style="width: 100vw; height: calc(100vw + 80px);"></iframe></textarea>
+  </div>
+
   <div class="slide-controls">
     <div class="zoom-container">
       <label for="zoom" class="zoom-label">Kart zoom</label>
@@ -38,9 +45,10 @@
       </div>
       <a link="#0" class="zoomBtn inn" id="zoomInn"><img src="images/pluss.png" alt="pluss-btn"></a>
     </div>
-    <div class="map-states">
-      <a class="map-state after active" href="#1">Etter</a>
-      <a class="map-state before" href="#0">Før</a>
+    <div class="nho-share">
+      <a class="nho-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.nho.no/Politikk-og-analyse/Offentlig-sektor-og-naringslivet/kommunesammenslaing/" rel='nofollow' target='_blank'></a>
+      <a class="nho-twitter" href='https://twitter.com/intent/tweet?text=https://www.nho.no/Politikk-og-analyse/Offentlig-sektor-og-naringslivet/kommunesammenslaing/' rel='nofollow' target='_blank'></a>
+      <a class="nho-embed" id="embed-model-link" href="#0"></a>
     </div>
   </div>
 
@@ -48,12 +56,8 @@
 
     <svg id="municipalities-map" class="svg-content" viewBox="0 0 4000 4000" xmlns="http://www.w3.org/2000/svg">
       <title>
-        Artboard 1
+        Municipality map
       </title>
-      <desc>
-        Map of Norway
-      </desc>
-      <defs>
 
       </defs>
       <g id="map-container" fill="none" fill-rule="evenodd">
@@ -945,7 +949,7 @@
             <tspan x="247.652" y="3673.072">Flekkefjord</tspan>
           </text>
           <text id="Evje">
-            <tspan x="402.888" y="3620.593">Evje</tspan>
+            <tspan x="395.888" y="3620.593">Evje og Hornes</tspan>
           </text>
           <text id="Søgne">
             <tspan x="397.524" y="3752.221">Søgne</tspan>

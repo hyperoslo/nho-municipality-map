@@ -41,10 +41,6 @@ $(document).ready(function() {
       }
   });
 
-
-
-
-
   $.fn.addClassSVG = function(className){
       $(this).attr('class', function(index, existingClassNames) {
           return existingClassNames + ' ' + className;
@@ -69,13 +65,6 @@ $(document).ready(function() {
 
 
   mapGroup.altDrag();
-
-
-
-
-  var dragMoveListener = function(event) {
-    console.log("test");
-  }
 
   var selectMunicipality = function(muni, animation) {
     if(muni) {
@@ -169,12 +158,9 @@ $(document).ready(function() {
     } else {
       zoomOut();
     }
+    e.preventDefault();
+    return false;
   });
-
-  var updateZipLink = function(target) {
-
-    $('#download-zip').attr('href', 'zip/')
-  }
 
   $('.new-municipality').click(function(){
     if (noClicking) {
@@ -216,13 +202,24 @@ $(document).ready(function() {
 
   $('#municipality-selector').on('change', function() {
     var selected = $(this).val();
-    console.log(selected);
     if (selected == 'backToMap') {
       backToMap(500);
     } else {
       selectMunicipality(selected, 500);
     };
-  })
+  });
+
+  $('.dismiss-modal').click(function(e) {
+    $('.nho-embed-modal').toggle();
+    e.preventDefault();
+    return false;
+  });
+
+  $('#embed-model-link').click(function(e) {
+    $('.nho-embed-modal').toggle();
+    e.preventDefault();
+    return false;
+  });
 
   // If linked directly with param m select the municipality with no animation
   if(queryParams.m) {

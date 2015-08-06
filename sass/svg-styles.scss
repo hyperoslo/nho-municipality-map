@@ -42,10 +42,11 @@
 }
 .new-names {
   font-family: 'neosans', helvetica;
-  text-shadow: 0.6px 0.6px 3px rgba(0,0,0,0.50), -1px 0 #673666, 0 1px #673666, 1px 0 #673666, 0 -1px #673666;
+  font-weight: 400;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.80), -1px 0 #673666, 0 1px #673666, 1px 0 #673666, 0 -1px #673666;
   pointer-events: none;
 }
 .old-names {
-  text-shadow: 0.6px 0.6px 1px rgba(0,0,0,0.50);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.80);
   pointer-events: none;
 }
