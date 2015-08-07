@@ -58,7 +58,7 @@
   font-size: 20px;
   font-weight: 300;
   padding-left: 30px;
-  @include retina-image('../images/download-arrow', 25px 24px, 'png', '../images/download-arrow@2x', 'png');
+  @include retina-image('../images/download-arrow', 26px 26px, 'png', '../images/download-arrow@2x', 'png');
   background-position: left 9px center;
   background-repeat: no-repeat;
   @include breakpoint(max-width 735px) {
