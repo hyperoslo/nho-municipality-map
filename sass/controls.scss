@@ -21,14 +21,12 @@
     font-weight: 300 !important;
     color: $font-color;
     display: inline-block;
-    @include retina-image('../images/arrow', 7px 12px, 'png', '../images/arrow@2x', 'png');
     background-position: right 10px center;
     background-repeat: no-repeat;
     padding-right: 24px;
     @include breakpoint(max-width 735px) {
       margin-bottom: 5px;
       font-size: 24px;
-      background-image: none;
       clear: both;
       display: block;
       width: 100%;
