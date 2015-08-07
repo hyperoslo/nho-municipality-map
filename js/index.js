@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+  document.body.addEventListener('touchmove', function(event) {
+    event.preventDefault();
+  }, false); 
+
   jQuery.extend({
     getQueryParameters : function(str) {
       return (str || document.location.search).replace(/(^\?)/,'').split("&").map(function(n){return n = n.split("="),this[n[0]] = n[1],this}.bind({}))[0];
@@ -72,12 +76,16 @@ $(document).ready(function() {
       var iframeLink = $('#embed-content').val();
       $('#embed-content').val(iframeLink.replace(/\?m=(.+?)&/, '?m=' + muni + '&'));
     }
-    maxWidthScale = (4000.0/bbox.width);
-    maxHeightScale = (4000.0/bbox.height);
+    var maxWidthScale = (4000.0/bbox.width);
+    var maxHeightScale = (4000.0/bbox.height);
 
     // Choose the lowes scale so that the whole piece fits 
     scale = maxWidthScale <= maxHeightScale ? maxWidthScale: maxHeightScale;
-    scale = scale * 0.5
+    scale = scale * 0.6
+
+    console.log(scale);
+
+    scale = scale <= 11 ? scale : 11;
 
     maxSize = bbox.width >= bbox.height ? bbox.width : bbox.height;
 
