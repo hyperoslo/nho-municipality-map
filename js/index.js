@@ -1,9 +1,5 @@
 $(document).ready(function() {
 
-  document.body.addEventListener('touchmove', function(event) {
-    event.preventDefault();
-  }, false); 
-
   jQuery.extend({
     getQueryParameters : function(str) {
       return (str || document.location.search).replace(/(^\?)/,'').split("&").map(function(n){return n = n.split("="),this[n[0]] = n[1],this}.bind({}))[0];
@@ -67,6 +63,10 @@ $(document).ready(function() {
   var mapSVG = Snap.select('#municipalities-map');
   var mapGroup = Snap.select('#map-container');
 
+
+  document.getElementById('map-container').addEventListener('touchmove', function(event) {
+    event.preventDefault();
+  }, false); 
 
   mapGroup.altDrag();
 
