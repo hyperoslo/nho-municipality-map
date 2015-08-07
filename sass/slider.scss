@@ -22,7 +22,7 @@
   width: calc(100% - 85px);
   font-size: 15px;
   height: 50px;
-  @include breakpoint(max-width 450px) {
+  @include breakpoint(max-width 650px) {
     background-color: transparent;
     padding: 0px;
   }
@@ -49,19 +49,19 @@
     float: left;
     color: #858E99;
     font-size: 25px;
-    @include breakpoint(max-width 450px) {
+    @include breakpoint(max-width 650px) {
       width: 65px;
       text-align: center;
     }
     &.inn {
-      @include breakpoint(max-width 450px) {
+      @include breakpoint(max-width 650px) {
         border-radius: 0px 1px 1px 0px;
       }
       padding-top: 5px;
     }
     &.out {
       padding-bottom: 5px;
-      @include breakpoint(max-width 450px) {
+      @include breakpoint(max-width 650px) {
         border-right: 1px solid #D8D8D8;
         border-radius: 1px 0px 0px 1px;
       }
@@ -70,9 +70,6 @@
   .slider-container {
     width: calc(100% - 170px);
     @include breakpoint(max-width 650px) {
-      width: calc(100% - 65px);
-    }
-    @include breakpoint(max-width 450px) {
       display: none;
     }
     position: relative;

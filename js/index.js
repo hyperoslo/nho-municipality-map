@@ -83,8 +83,6 @@ $(document).ready(function() {
     scale = maxWidthScale <= maxHeightScale ? maxWidthScale: maxHeightScale;
     scale = scale * 0.6
 
-    console.log(scale);
-
     scale = scale <= 11 ? scale : 11;
 
     maxSize = bbox.width >= bbox.height ? bbox.width : bbox.height;
