@@ -26,9 +26,9 @@ gulp.task('html', function () {
     .pipe(gulp.dest('./dist'))
 });
 
-gulp.task('zip', function () {
-  gulp.src(['./zip/*.zip'])
-    .pipe(gulp.dest('./dist/zip'))
+gulp.task('pdf', function () {
+  gulp.src(['./pdf/*.pdf'])
+    .pipe(gulp.dest('./dist/pdf'))
 });
 
 gulp.task('js', function () {
@@ -47,7 +47,7 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./dist/css'));
 });
 
-gulp.task('watch', ['sass', 'fonts', 'images', 'js', 'zip'], function () {
+gulp.task('watch', ['sass', 'fonts', 'images', 'js', 'pdf'], function () {
   gulp.watch('./sass/**/*.scss', ['sass']);
   gulp.watch('./js/**/*.js', ['js']);
   gulp.watch('./**/*.html', ['html']);
