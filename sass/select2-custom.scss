@@ -91,7 +91,7 @@
     font-family: $font;
     height: 38px;
     padding: 5px 40px 5px 14px;
-    @include retina-image('../images/search', 20px 21px, 'png', '../images/search@2x', 'png');
+    @include retina-image('../images/search', 21px 21px, 'png', '../images/search@2x', 'png');
     background-position: right 10px center;
     background-repeat: no-repeat;
     @include breakpoint(max-width 735px) {
