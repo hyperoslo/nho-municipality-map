@@ -1,5 +1,5 @@
 .slide-controls {
-  width: calc(100% - 120px);
+  width: calc(100% - 40px);
   @include breakpoint(max-width 650px) {
     width: calc(100% - 40px);
   }
@@ -19,7 +19,7 @@
   padding: 5px 10px;
   border-radius: 1px;
   color: $font-color;
-  width: calc(100% - 85px);
+  width: calc(100% - 75px);
   font-size: 15px;
   height: 50px;
   @include breakpoint(max-width 650px) {

@@ -61,7 +61,7 @@
   .old-muni {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
     color: white;
-    font-weight: 300;
+    font-weight: 400;
     span {
       position: relative;
       top: 50%;
@@ -87,7 +87,6 @@
 }
 .download-zip {
   display: block;
-  width: 177px;
   line-height: 36px;
   border: 1px solid #0081AD;
   float: right;
@@ -97,16 +96,17 @@
   color: $font-color;
   font-size: 20px;
   font-weight: 300;
-  padding-left: 30px;
+  padding-left: 45px;
+  padding-right: 10px;
   @include retina-image('../images/download-arrow', 26px 26px, 'png', '../images/download-arrow@2x', 'png');
   background-position: left 9px center;
   background-repeat: no-repeat;
   @include breakpoint(max-width 735px) {
     background-image: none;
-    padding-left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 15px;
     line-height: 28px;
-    width: 100px;
   }
 }
 .back-controls {

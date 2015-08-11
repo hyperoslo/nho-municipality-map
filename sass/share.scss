@@ -1,65 +1,37 @@
 .nho-share {
-  float: right;
-  width: 80px;
-  height: 50px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 56px;
+  height: 208px;
   background-color: white;
-  @include retina-image('../images/share', 33px 25px, 'png', '../images/share@2x', 'png');
-  background-position: center;
-  background-repeat: no-repeat;
   a.nho-facebook {
-    @include retina-image('../images/facebook-inactive', 60px 12px, 'png', '../images/facebook-inactive@2x', 'png');
+    @include retina-image('../images/facebook', 34px 35px, 'png', '../images/facebook@2x', 'png');
     background-color: white;
-    top: -100px;
-    &:hover {
-      @include retina-image('../images/facebook-active', 60px 12px, 'png', '../images/facebook-active@2x', 'png');
-    }
   }
   a.nho-twitter {
-    @include retina-image('../images/twitter-inactive', 60px 12px, 'png', '../images/twitter-inactive@2x', 'png');
+    @include retina-image('../images/twitter', 34px 35px, 'png', '../images/twitter@2x', 'png');
     background-color: white;
-    top: -50px;
-    &:hover {
-      @include retina-image('../images/twitter-active', 60px 12px, 'png', '../images/twitter-active@2x', 'png');
-    }
+  }
+  a.nho-linkedin {
+    @include retina-image('../images/linkedin', 34px 35px, 'png', '../images/linkedin@2x', 'png');
+    background-color: white;
   }
   a.nho-embed {
-    @include retina-image('../images/embed-inactive', 30px 18px, 'png', '../images/embed-inactive@2x', 'png');
+    @include retina-image('../images/embed', 34px 35px, 'png', '../images/embed@2x', 'png');
     background-color: white;
-    top: -150px; 
-    &:hover {
-      @include retina-image('../images/embed-active', 30px 18px, 'png', '../images/embed-active@2x', 'png');
-    }
   }
   a {
-    display: none;
-    height: 50px;
-    width: 80px;
-    position: absolute;
+    display: inline-block;
+    margin: 9px 11px 5px;
+    width: 34px;
+    height: 35px;
     background-position: center;
     background-repeat: no-repeat;
   }
-
-  &:hover {
-    background-image: url(../images/share-active.png), linear-gradient(-180deg, #2399C1 50%, #238EB3 100%);
-    color: white;
-    font-weight: 400;
-    a {
-      display: block;
-    }
-  }
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-    &:hover {
-      background-image: url(../images/share-active@2x.png), linear-gradient(-180deg, #2399C1 50%, #238EB3 100%);
-      background-size: 33px 25px;
-    }
-  }
-  &.before {
-    border-radius: 1px 0px 0px 1px;
-  }
-  &.after {
-    border-radius: 0px 1px 1px 0px;
-  }
+  border-radius: 1px;
 }
+
 .nho-embed-modal {
   display: none;
   position: absolute;
