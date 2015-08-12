@@ -10,507 +10,505 @@
   <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
-  <!-- bower:js -->
-  <!-- endbower -->
+
   <script type="text/javascript" src="js/jquery.mobile-events.min.js" charset="utf-8"></script>
   <script type="text/javascript" src="js/snap.svg-min.js" charset="utf-8"></script>
-
   <script type="text/javascript" src="js/quo.standalone.js" charset="utf-8"></script>
-  <!--script type="text/javascript" src="js/touch.js" charset="utf-8"></script-->
-
   <script src="js/index.js" charset="utf-8"></script>
 
   <link rel="stylesheet" href="css/index.css">
   <!--[if lt IE 10]>
     <link rel="stylesheet" href="css/ie9.css">
   <![endif]-->
-</head>
-<body>
-  <div class="top-controls">
-    <h1>
-      Se din nye kommune
-    </h1>
-    <div class="select2-responsive">
-      <select name="kommune" id="municipality-selector" >
-        <option value=new-Kystfosen>Agdenes</option>
-        <option value=new-Ytre-Helgeland>Alstahaug</option>
-        <option value=new-Alta>Alta</option>
-        <option value=new-Tynset>Alvdal</option>
-        <option value=new-Sandefjord>Andebu</option>
-        <option value=new-Vesteralen>Andøy</option>
-        <option value=new-Halden>Aremark</option>
-        <option value=new-Ostre-Agder>Arendal</option>
-        <option value=new-Akershus-vest>Asker</option>
-        <option value=new-Indre-Ostfold>Askim</option>
-        <option value=new-Firda>Askvoll</option>
-        <option value=new-Bergen>Askøy</option>
-        <option value=new-Lindesnes-regionen>Audnedal</option>
-        <option value=new-Romsdal>Aukra</option>
-        <option value=new-Nordmore>Aure</option>
-        <option value=new-Laerdal>Aurland</option>
-        <option value=new-Nedre-Romerike>Aurskog-Høland</option>
-        <option value=new-Bergen>Austevoll</option>
-        <option value=new-Nord-Hordaland>Austrheim</option>
-        <option value=new-Nordmore>Averøy</option>
-        <option value=new-Sogndal>Balestrand</option>
-        <option value=new-Ofoten>Ballangen</option>
-        <option value=new-Tromso>Balsfjord</option>
-        <option value=new-Grenland>Bamble</option>
-        <option value=new-Midt-Troms>Bardu</option>
-        <option value=new-Salten>Beiarn</option>
-        <option value=new-Midt-Troms>Berg</option>
-        <option value=new-Bergen>Bergen</option>
-        <option value=new-Tana>Berlevåg</option>
-        <option value=new-Sor-Helgeland>Bindal</option>
-        <option value=new-Kristiansand>Birkenes</option>
-        <option value=new-Dalane>Bjerkreim</option>
-        <option value=new-Kystfosen>Bjugn</option>
-        <option value=new-Salten>Bodø</option>
-        <option value=new-Jaeren>Bokn</option>
-        <option value=new-Firda>Bremanger</option>
-        <option value=new-Sor-Helgeland>Brønnøy</option>
-        <option value=new-Setesdal>Bygland</option>
-        <option value=new-Setesdal>Bykle</option>
-        <option value=new-Akershus-vest>Bærum</option>
-        <option value=new-Vesteralen>Bø (Nordl.)</option>
-        <option value=new-Midt-Telemark>Bø (Telem.)</option>
-        <option value=new-Sunnhordaland>Bømlo</option>
-        <option value=new-Tana>Båtsfjord</option>
-        <option value=new-Tana>Deatnu Tana</option>
-        <option value=new-Salten>Divtasvuodna Tysfjord</option>
-        <option value=new-Gudbrandsdalen>Dovre</option>
-        <option value=new-Drammen>Drammen</option>
-        <option value=new-Grenland>Drangedal</option>
-        <option value=new-Midt-Troms>Dyrøy</option>
-        <option value=new-Ytre-Helgeland>Dønna</option>
-        <option value=new-Nordfjord>Eid</option>
-        <option value=new-Romsdal>Eide</option>
-        <option value=new-Voss-og-Hardanger>Eidfjord</option>
-        <option value=new-Indre-Ostfold>Eidsberg</option>
-        <option value=new-Kongsvinger>Eidskog</option>
-        <option value=new-Ovre-Romerike>Eidsvoll</option>
-        <option value=new-Dalane>Eigersund</option>
-        <option value=new-Elverum>Elverum</option>
-        <option value=new-Follo>Enebakk</option>
-        <option value=new-Elverum>Engerdal</option>
-        <option value=new-Indre-Haugalandet>Etne</option>
-        <option value=new-Valdres>Etnedal</option>
-        <option value=new-Ofoten>Evenes</option>
-        <option value=new-Setesdal>Evje og Hornnes</option>
-        <option value=new-Lister-regionen>Farsund</option>
-        <option value=new-Salten>Fauske</option>
-        <option value=new-Nord-Hordaland>Fedje</option>
-        <option value=new-Nedre-Romerike>Fet</option>
-        <option value=new-Nord-Jaeren>Finnøy</option>
-        <option value=new-Sunnhordaland>Fitjar</option>
-        <option value=new-Firda>Fjaler</option>
-        <option value=new-Bergen>Fjell</option>
-        <option value=new-Lofoten>Flakstad</option>
-        <option value=new-Namdalskysten>Flatanger</option>
-        <option value=new-Lister-regionen>Flekkefjord</option>
-        <option value=new-Kongsberg>Flesberg</option>
-        <option value=new-Firda>Flora</option>
-        <option value=new-Hallingdal>Flå</option>
-        <option value=new-Tynset>Folldal</option>
-        <option value=new-Ryfylke>Forsand</option>
-        <option value=new-Namdalskysten>Fosnes</option>
-        <option value=new-Nedre-Glomma>Fredrikstad</option>
-        <option value=new-Follo>Frogn</option>
-        <option value=new-Ostre-Agder>Froland</option>
-        <option value=new-Innherredsregionen>Frosta</option>
-        <option value=new-Romsdal>Fræna</option>
-        <option value=new-Kystfosen>Frøya</option>
-        <option value=new-Bergen>Fusa</option>
-        <option value=new-Vest-Telemark>Fyresdal</option>
-        <option value=new-Firda>Førde</option>
-        <option value=new-Nord-Troms>Gáivuotna Kåfjord</option>
-        <option value=new-Nordkinn>Gamvik</option>
-        <option value=new-Firda>Gaular</option>
-        <option value=new-Lillehammer>Gausdal</option>
-        <option value=new-Salten>Gildeskål</option>
-        <option value=new-Sunnmore>Giske</option>
-        <option value=new-Nordmore>Gjemnes</option>
-        <option value=new-Ovre-Romerike>Gjerdrum</option>
-        <option value=new-Ostre-Agder>Gjerstad</option>
-        <option value=new-Nord-Jaeren>Gjesdal</option>
-        <option value=new-Gjovik>Gjøvik</option>
-        <option value=new-Nordfjord>Gloppen</option>
-        <option value=new-Hallingdal>Gol</option>
-        <option value=new-Hadeland>Gran</option>
-        <option value=new-Midtre-Helgeland>Grane</option>
-        <option value=new-Voss-og-Hardanger>Granvin</option>
-        <option value=new-Harstad-regionen>Gratangen</option>
-        <option value=new-Ostre-Agder>Grimstad</option>
-        <option value=new-Indre-Namdal>Grong</option>
-        <option value=new-Kongsvinger>Grue</option>
-        <option value=new-Nord-Hordaland>Gulen</option>
-        <option value=new-Alta>Guovdageaidnu Kautokeino</option>
-        <option value=new-Salten>Hábmer Hamarøy</option>
-        <option value=new-Vesteralen>Hadsel</option>
-        <option value=new-Halden>Halden</option>
-        <option value=new-Nordmore>Halsa</option>
-        <option value=new-Hamar>Hamar</option>
-        <option value=new-Hammerfest>Hammerfest</option>
-        <option value=new-Sunnmore>Haram</option>
-        <option value=new-Sunnmore>Hareid</option>
-        <option value=new-Harstad-regionen>Harstad</option>
-        <option value=new-Alta>Hasvik</option>
-        <option value=new-Midtre-Helgeland>Hattfjelldal</option>
-        <option value=new-Jaeren>Haugesund</option>
-        <option value=new-Kystfosen>Hemne</option>
-        <option value=new-Ytre-Helgeland>Hemnes</option>
-        <option value=new-Hallingdal>Hemsedal</option>
-        <option value=new-Sunnmore>Herøy (M. og R.)</option>
-        <option value=new-Ytre-Helgeland>Herøy (Nordl.)</option>
-        <option value=new-Kystfosen>Hitra</option>
-        <option value=new-Midt-Telemark>Hjartdal</option>
-        <option value=new-Ryfylke>Hjelmeland</option>
-        <option value=new-Indre-Ostfold>Hobøl</option>
-        <option value=new-Horten-Holmestrand>Hof</option>
-        <option value=new-Hallingdal>Hol</option>
-        <option value=new-Ringerike>Hole</option>
-        <option value=new-Horten-Holmestrand>Holmestrand</option>
-        <option value=new-Rorosregionen>Holtålen</option>
-        <option value=new-Nordfjord>Hornindal</option>
-        <option value=new-Horten-Holmestrand>Horten</option>
-        <option value=new-Ovre-Romerike>Hurdal</option>
-        <option value=new-Drammen>Hurum</option>
-        <option value=new-Nedre-Glomma>Hvaler</option>
-        <option value=new-Firda>Hyllestad</option>
-        <option value=new-Lister-regionen>Hægebostad</option>
-        <option value=new-Firda>Høyanger</option>
-        <option value=new-Indre-Namdal>Høylandet</option>
-        <option value=new-Haugalandet>Hå</option>
-        <option value=new-Harstad-regionen>Ibestad</option>
-        <option value=new-Innherredsregionen>Inderøy</option>
-        <option value=new-Kristiansand>Iveland</option>
-        <option value=new-Ringerike>Jevnaker</option>
-        <option value=new-Voss-og-Hardanger>Jondal</option>
-        <option value=new-Firda>Jølster</option>
-        <option value=new-Midt-Finnmark>Kárásjohka Karasjok</option>
-        <option value=new-Tromso>Karlsøy</option>
-        <option value=new-Jaeren>Karmøy</option>
-        <option value=new-Haugalandet>Klepp</option>
-        <option value=new-Trondheim>Klæbu</option>
-        <option value=new-Kongsberg>Kongsberg</option>
-        <option value=new-Kongsvinger>Kongsvinger</option>
-        <option value=new-Grenland>Kragerø</option>
-        <option value=new-Kristiansand>Kristiansand</option>
-        <option value=new-Nordmore>Kristiansund</option>
-        <option value=new-Midtfylke>Krødsherad</option>
-        <option value=new-Hammerfest>Kvalsund</option>
-        <option value=new-Voss-og-Hardanger>Kvam</option>
-        <option value=new-Lister-regionen>Kvinesdal</option>
-        <option value=new-Sunnhordaland>Kvinnherad</option>
-        <option value=new-Vest-Telemark>Kviteseid</option>
-        <option value=new-Nord-Jaeren>Kvitsøy</option>
-        <option value=new-Harstad-regionen>Kvæfjord</option>
-        <option value=new-Nord-Troms>Kvænangen</option>
-        <option value=new-Larvik>Lardal</option>
-        <option value=new-Larvik>Larvik</option>
-        <option value=new-Midt-Troms>Lavangen</option>
-        <option value=new-Nordkinn>Lebesby</option>
-        <option value=new-Sogndal>Leikanger</option>
-        <option value=new-Nordre-Helgeland>Leirfjord</option>
-        <option value=new-Namdalskysten>Leka</option>
-        <option value=new-Trondheim>Leksvik</option>
-        <option value=new-Midt-Troms>Lenvik</option>
-        <option value=new-Gudbrandsdalen>Lesja</option>
-        <option value=new-Innherredsregionen>Levanger</option>
-        <option value=new-Drammen>Lier</option>
-        <option value=new-Indre-Namdal>Lierne</option>
-        <option value=new-Lillehammer>Lillehammer</option>
-        <option value=new-Kristiansand>Lillesand</option>
-        <option value=new-Lindesnes-regionen>Lindesnes</option>
-        <option value=new-Nord-Hordaland>Lindås</option>
-        <option value=new-Gudbrandsdalen>Lom</option>
-        <option value=new-Alta>Loppa</option>
-        <option value=new-Dalane>Lund</option>
-        <option value=new-Hadeland>Lunner</option>
-        <option value=new-Nordre-Helgeland>Lurøy</option>
-        <option value=new-Sogndal>Luster</option>
-        <option value=new-Lister-regionen>Lyngdal</option>
-        <option value=new-Tromso>Lyngen</option>
-        <option value=new-Laerdal>Lærdal</option>
-        <option value=new-Ofoten>Lødingen</option>
-        <option value=new-Nedre-Romerike>Lørenskog</option>
-        <option value=new-Hamar>Løten</option>
-        <option value=new-Trondheim>Malvik</option>
-        <option value=new-Lindesnes-regionen>Mandal</option>
-        <option value=new-Indre-Ostfold>Marker</option>
-        <option value=new-Lindesnes-regionen>Marnardal</option>
-        <option value=new-Nord-Hordaland>Masfjorden</option>
-        <option value=new-Nord-Hordaland>Meland</option>
-        <option value=new-Oppdalsregionen>Meldal</option>
-        <option value=new-Trondheim>Melhus</option>
-        <option value=new-Salten>Meløy</option>
-        <option value=new-Trondheim>Meråker</option>
-        <option value=new-Romsdal>Midsund</option>
-        <option value=new-Oppdalsregionen>Midtre Gauldal</option>
-        <option value=new-Nord-Hordaland>Modalen</option>
-        <option value=new-Midtfylke>Modum</option>
-        <option value=new-Romsdal>Molde</option>
-        <option value=new-Lofoten>Moskenes</option>
-        <option value=new-Moss>Moss</option>
-        <option value=new-Midt-Troms>Målselv</option>
-        <option value=new-Hammerfest>Måsøy</option>
-        <option value=new-Namdalskysten>Namdalseid</option>
-        <option value=new-Namdalskysten>Namsos</option>
-        <option value=new-Indre-Namdal>Namsskogan</option>
-        <option value=new-Ovre-Romerike>Nannestad</option>
-        <option value=new-Ofoten>Narvik</option>
-        <option value=new-Firda>Naustdal</option>
-        <option value=new-Drammen>Nedre Eiker</option>
-        <option value=new-Ovre-Romerike>Nes (Ak.)</option>
-        <option value=new-Hallingdal>Nes (Busk.)</option>
-        <option value=new-Nordre-Helgeland>Nesna</option>
-        <option value=new-Follo>Nesodden</option>
-        <option value=new-Romsdal>Nesset</option>
-        <option value=new-Vest-Telemark>Nissedal</option>
-        <option value=new-Nedre-Romerike>Nittedal</option>
-        <option value=new-Midt-Telemark>Nome</option>
-        <option value=new-Valdres>Nord-Aurdal</option>
-        <option value=new-Sunnmore>Norddal</option>
-        <option value=new-Gudbrandsdalen>Nord-Fron</option>
-        <option value=new-Midt-Finnmark>Nordkapp</option>
-        <option value=new-Kongsvinger>Nord-Odal</option>
-        <option value=new-Gjovik>Nordre Land</option>
-        <option value=new-Nord-Troms>Nordreisa</option>
-        <option value=new-Kongsberg>Nore og Uvdal</option>
-        <option value=new-Midt-Telemark>Notodden</option>
-        <option value=new-Namdalskysten>Nærøy</option>
-        <option value=new-Tonsberg>Nøtterøy</option>
-        <option value=new-Voss-og-Hardanger>Odda</option>
-        <option value=new-Oppdalsregionen>Oppdal</option>
-        <option value=new-Follo>Oppegård</option>
-        <option value=new-Trondheim>Orkdal</option>
-        <option value=new-Rorosregionen>Os (Hedm.)</option>
-        <option value=new-Bergen>Os (Hord.)</option>
-        <option value=new-Namdalskysten>Osen</option>
-        <option value=new-Oslo>Oslo kommune</option>
-        <option value=new-Bergen>Osterøy</option>
-        <option value=new-Namdalskysten>Overhalla</option>
-        <option value=new-Midt-Finnmark>Porsanger Porsángu Porsanki</option>
-        <option value=new-Grenland>Porsgrunn</option>
-        <option value=new-Nord-Hordaland>Radøy</option>
-        <option value=new-Nedre-Glomma>Rakkestad</option>
-        <option value=new-Nordre-Helgeland>Rana</option>
-        <option value=new-Nord-Jaeren>Randaberg</option>
-        <option value=new-Romsdal>Rauma</option>
-        <option value=new-Horten-Holmestrand>Re</option>
-        <option value=new-Tynset>Rendalen</option>
-        <option value=new-Oppdalsregionen>Rennebu</option>
-        <option value=new-Nord-Jaeren>Rennesøy</option>
-        <option value=new-Trondheim>Rindal</option>
-        <option value=new-Lillehammer>Ringebu</option>
-        <option value=new-Ringerike>Ringerike</option>
-        <option value=new-Hamar>Ringsaker</option>
-        <option value=new-Trondheim>Rissa</option>
-        <option value=new-Ostre-Agder>Risør</option>
-        <option value=new-Kystfosen>Roan</option>
-        <option value=new-Kongsberg>Rollag</option>
-        <option value=new-Moss>Rygge</option>
-        <option value=new-Nedre-Romerike>Rælingen</option>
-        <option value=new-Nordre-Helgeland>Rødøy</option>
-        <option value=new-Indre-Ostfold>Rømskog</option>
-        <option value=new-Rorosregionen>Røros</option>
-        <option value=new-Salten>Røst</option>
-        <option value=new-Drammen>Røyken</option>
-        <option value=new-Indre-Namdal>Røyrvik</option>
-        <option value=new-Moss>Råde</option>
-        <option value=new-Midt-Troms>Salangen</option>
-        <option value=new-Salten>Saltdal</option>
-        <option value=new-Bergen>Samnanger</option>
-        <option value=new-Sunnmore>Sande (M. og R.)</option>
-        <option value=new-Drammen>Sande (Vestf.)</option>
-        <option value=new-Sandefjord>Sandefjord</option>
-        <option value=new-Nord-Jaeren>Sandnes</option>
-        <option value=new-Sunnmore>Sandøy</option>
-        <option value=new-Nedre-Glomma>Sarpsborg</option>
-        <option value=new-Indre-Haugalandet>Sauda</option>
-        <option value=new-Midt-Telemark>Sauherad</option>
-        <option value=new-Gudbrandsdalen>Sel</option>
-        <option value=new-Trondheim>Selbu</option>
-        <option value=new-Nordfjord>Selje</option>
-        <option value=new-Vest-Telemark>Seljord</option>
-        <option value=new-Midtfylke>Sigdal</option>
-        <option value=new-Grenland>Siljan</option>
-        <option value=new-Lister-regionen>Sirdal</option>
-        <option value=new-Trondheim>Skaun</option>
-        <option value=new-Nedre-Romerike>Skedsmo</option>
-        <option value=new-Follo>Ski</option>
-        <option value=new-Grenland>Skien</option>
-        <option value=new-Indre-Ostfold>Skiptvet</option>
-        <option value=new-Nord-Troms>Skjervøy</option>
-        <option value=new-Gudbrandsdalen>Skjåk</option>
-        <option value=new-Sunnmore>Skodje</option>
-        <option value=new-Harstad-regionen>Skånland</option>
-        <option value=new-Nordmore>Smøla</option>
-        <option value=new-Kystfosen>Snillfjord</option>
-        <option value=new-Innherredsregionen>Snåase Snåsa</option>
-        <option value=new-Sogndal>Sogndal</option>
-        <option value=new-Dalane>Sokndal</option>
-        <option value=new-Nord-Jaeren>Sola</option>
-        <option value=new-Firda>Solund</option>
-        <option value=new-Kristiansand>Songdalen</option>
-        <option value=new-Vesteralen>Sortland</option>
-        <option value=new-Indre-Ostfold>Spydeberg</option>
-        <option value=new-Hamar>Stange</option>
-        <option value=new-Nord-Jaeren>Stavanger</option>
-        <option value=new-Salten>Steigen</option>
-        <option value=new-Innherredsregionen>Steinkjer</option>
-        <option value=new-Trondheim>Stjørdal</option>
-        <option value=new-Sandefjord>Stokke</option>
-        <option value=new-Sunnhordaland>Stord</option>
-        <option value=new-Sunnmore>Stordal</option>
-        <option value=new-Elverum>Stor-Elvdal</option>
-        <option value=new-Tromso>Storfjord</option>
-        <option value=new-Ryfylke>Strand</option>
-        <option value=new-Sunnmore>Stranda</option>
-        <option value=new-Nordfjord>Stryn</option>
-        <option value=new-Sunnmore>Sula</option>
-        <option value=new-Indre-Haugalandet>Suldal</option>
-        <option value=new-Bergen>Sund</option>
-        <option value=new-Nordmore>Sunndal</option>
-        <option value=new-Nordmore>Surnadal</option>
-        <option value=new-Jaeren>Sveio</option>
-        <option value=new-Drammen>Svelvik</option>
-        <option value=new-Sunnmore>Sykkylven</option>
-        <option value=new-Kristiansand>Søgne</option>
-        <option value=new-Sor-Helgeland>Sømna</option>
-        <option value=new-Gjovik>Søndre Land</option>
-        <option value=new-Valdres>Sør-Aurdal</option>
-        <option value=new-Salten>Sørfold</option>
-        <option value=new-Lillehammer>Sør-Fron</option>
-        <option value=new-Kongsvinger>Sør-Odal</option>
-        <option value=new-Midt-Troms>Sørreisa</option>
-        <option value=new-Nedre-Romerike>Sørum</option>
-        <option value=new-Varanger>Sør-Varanger</option>
-        <option value=new-Haugalandet>Time</option>
-        <option value=new-Nordmore>Tingvoll</option>
-        <option value=new-Midt-Telemark>Tinn</option>
-        <option value=new-Ofoten>Tjeldsund</option>
-        <option value=new-Tonsberg>Tjøme</option>
-        <option value=new-Vest-Telemark>Tokke</option>
-        <option value=new-Tynset>Tolga</option>
-        <option value=new-Midt-Troms>Torsken</option>
-        <option value=new-Midt-Troms>Tranøy</option>
-        <option value=new-Tromso>Tromsø</option>
-        <option value=new-Trondheim>Trondheim</option>
-        <option value=new-Elverum>Trysil</option>
-        <option value=new-Nordre-Helgeland>Træna</option>
-        <option value=new-Indre-Ostfold>Trøgstad</option>
-        <option value=new-Ostre-Agder>Tvedestrand</option>
-        <option value=new-Rorosregionen>Tydal</option>
-        <option value=new-Tynset>Tynset</option>
-        <option value=new-Sunnhordaland>Tysnes</option>
-        <option value=new-Jaeren>Tysvær</option>
-        <option value=new-Tonsberg>Tønsberg</option>
-        <option value=new-Ovre-Romerike>Ullensaker</option>
-        <option value=new-Voss-og-Hardanger>Ullensvang</option>
-        <option value=new-Sunnmore>Ulstein</option>
-        <option value=new-Voss-og-Hardanger>Ulvik</option>
-        <option value=new-Varanger>Unjárga Nesseby</option>
-        <option value=new-Jaeren>Utsira</option>
-        <option value=new-Varanger>Vadsø</option>
-        <option value=new-Bergen>Vaksdal</option>
-        <option value=new-Setesdal>Valle</option>
-        <option value=new-Valdres>Vang</option>
-        <option value=new-Sunnmore>Vanylven</option>
-        <option value=new-Varanger>Vardø</option>
-        <option value=new-Midtre-Helgeland>Vefsn</option>
-        <option value=new-Sor-Helgeland>Vega</option>
-        <option value=new-Ostre-Agder>Vegårshei</option>
-        <option value=new-Kristiansand>Vennesla</option>
-        <option value=new-Innherredsregionen>Verdal</option>
-        <option value=new-Innherredsregionen>Verran</option>
-        <option value=new-Follo>Vestby</option>
-        <option value=new-Romsdal>Vestnes</option>
-        <option value=new-Valdres>Vestre Slidre</option>
-        <option value=new-Gjovik>Vestre Toten</option>
-        <option value=new-Lofoten>Vestvågøy</option>
-        <option value=new-Sor-Helgeland>Vevelstad</option>
-        <option value=new-Sogndal>Vik</option>
-        <option value=new-Namdalskysten>Vikna</option>
-        <option value=new-Indre-Haugalandet>Vindafjord</option>
-        <option value=new-Vest-Telemark>Vinje</option>
-        <option value=new-Sunnmore>Volda</option>
-        <option value=new-Voss-og-Hardanger>Voss</option>
-        <option value=new-Salten>Værøy</option>
-        <option value=new-Lofoten>Vågan</option>
-        <option value=new-Nordfjord>Vågsøy</option>
-        <option value=new-Gudbrandsdalen>Vågå</option>
-        <option value=new-Kongsvinger>Våler (Hedm.)</option>
-        <option value=new-Moss>Våler (Østf.)</option>
-        <option value=new-Vesteralen>Øksnes</option>
-        <option value=new-Kystfosen>Ørland</option>
-        <option value=new-Sunnmore>Ørskog</option>
-        <option value=new-Sunnmore>Ørsta</option>
-        <option value=new-Gjovik>Østre Toten</option>
-        <option value=new-Drammen>Øvre Eiker</option>
-        <option value=new-Lillehammer>Øyer</option>
-        <option value=new-Bergen>Øygarden</option>
-        <option value=new-Valdres>Øystre Slidre</option>
-        <option value=new-Kystfosen>Åfjord</option>
-        <option value=new-Hallingdal>Ål</option>
-        <option value=new-Sunnmore>Ålesund</option>
-        <option value=new-Ostre-Agder>Åmli</option>
-        <option value=new-Elverum>Åmot</option>
-        <option value=new-Laerdal>Årdal</option>
-        <option value=new-Follo>Ås</option>
-        <option value=new-Lindesnes-regionen>Åseral</option>
-        <option value=new-Kongsvinger>Åsnes</option>
-      </select>
-    </div>
-    <a href="pdf/kommuner-alle.pdf" target="_blank" class="download-zip" id="download-zip" alt="Last ned alle kommunekart som pdf-filer." title="Last ned alle kommunekart som pdf-filer.">
-      <span class="micro">Last ned</span> PDF<span class="small">-kart<span>
-    </a>
-  </div>
 
-  <div class="nho-embed-modal">
-    <div class="dismiss-container">
-      <a href="#0" class="dismiss-modal">&times;</a>
-    </div>
-    <textarea name="embed" id="embed-content">
-<div class='iframe-wrapp' style="position: relative; padding-bottom: 100%; padding-top: 30px; height: 0; border: none;">
-  <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://nho-municipality-map.divshot.io/?m=####&d=300" frameborder="0" ></iframe>
-</div>
-    </textarea>
-  </div>
-
-  <div class="hint">
-    <div class="old-muni">
-      <span></span> Gammel kommune
-    </div>
-    <div class="new-muni">
-      <span></span> Ny kommune
-    </div>
-  </div>
-
-  <div class="slide-controls">
-    <div class="zoom-container">
-      <label for="zoom" class="zoom-label">Kart zoom</label>
-      <a link="#0" class="zoomBtn out" id="zoomOut"><img src="images/minus.png" alt="minus-btn"></a>
-      <div class="slider-container">
-        <input class="slider" type="range" name="zoom" id="zoom" value="1" min="0.9" max="20" step="0.1">
+  </head>
+  <body>
+    <div class="top-controls">
+      <h1>
+        Se din nye kommune
+      </h1>
+      <div class="select2-responsive">
+        <select name="kommune" id="municipality-selector" >
+          <option value='backToMap'>Hele Norge</option>
+          <option value='new-Kystfosen'>Agdenes</option>
+          <option value='new-Ytre-Helgeland'>Alstahaug</option>
+          <option value='new-Alta'>Alta</option>
+          <option value='new-Tynset'>Alvdal</option>
+          <option value='new-Sandefjord'>Andebu</option>
+          <option value='new-Vesteralen'>Andøy</option>
+          <option value='new-Halden'>Aremark</option>
+          <option value='new-Ostre-Agder'>Arendal</option>
+          <option value='new-Akershus-vest'>Asker</option>
+          <option value='new-Indre-Ostfold'>Askim</option>
+          <option value='new-Firda'>Askvoll</option>
+          <option value='new-Bergen'>Askøy</option>
+          <option value='new-Lindesnes-regionen'>Audnedal</option>
+          <option value='new-Romsdal'>Aukra</option>
+          <option value='new-Nordmore'>Aure</option>
+          <option value='new-Laerdal'>Aurland</option>
+          <option value='new-Nedre-Romerike'>Aurskog-Høland</option>
+          <option value='new-Bergen'>Austevoll</option>
+          <option value='new-Nord-Hordaland'>Austrheim</option>
+          <option value='new-Nordmore'>Averøy</option>
+          <option value='new-Sogndal'>Balestrand</option>
+          <option value='new-Ofoten'>Ballangen</option>
+          <option value='new-Tromso'>Balsfjord</option>
+          <option value='new-Grenland'>Bamble</option>
+          <option value='new-Midt-Troms'>Bardu</option>
+          <option value='new-Salten'>Beiarn</option>
+          <option value='new-Midt-Troms'>Berg</option>
+          <option value='new-Bergen'>Bergen</option>
+          <option value='new-Tana'>Berlevåg</option>
+          <option value='new-Sor-Helgeland'>Bindal</option>
+          <option value='new-Kristiansand'>Birkenes</option>
+          <option value='new-Dalane'>Bjerkreim</option>
+          <option value='new-Kystfosen'>Bjugn</option>
+          <option value='new-Salten'>Bodø</option>
+          <option value='new-Jaeren'>Bokn</option>
+          <option value='new-Firda'>Bremanger</option>
+          <option value='new-Sor-Helgeland'>Brønnøy</option>
+          <option value='new-Setesdal'>Bygland</option>
+          <option value='new-Setesdal'>Bykle</option>
+          <option value='new-Akershus-vest'>Bærum</option>
+          <option value='new-Vesteralen'>Bø (Nordl.)</option>
+          <option value='new-Midt-Telemark'>Bø (Telem.)</option>
+          <option value='new-Sunnhordaland'>Bømlo</option>
+          <option value='new-Tana'>Båtsfjord</option>
+          <option value='new-Tana'>Deatnu Tana</option>
+          <option value='new-Salten'>Divtasvuodna Tysfjord</option>
+          <option value='new-Gudbrandsdalen'>Dovre</option>
+          <option value='new-Drammen'>Drammen</option>
+          <option value='new-Grenland'>Drangedal</option>
+          <option value='new-Midt-Troms'>Dyrøy</option>
+          <option value='new-Ytre-Helgeland'>Dønna</option>
+          <option value='new-Nordfjord'>Eid</option>
+          <option value='new-Romsdal'>Eide</option>
+          <option value='new-Voss-og-Hardanger'>Eidfjord</option>
+          <option value='new-Indre-Ostfold'>Eidsberg</option>
+          <option value='new-Kongsvinger'>Eidskog</option>
+          <option value='new-Ovre-Romerike'>Eidsvoll</option>
+          <option value='new-Dalane'>Eigersund</option>
+          <option value='new-Elverum'>Elverum</option>
+          <option value='new-Follo'>Enebakk</option>
+          <option value='new-Elverum'>Engerdal</option>
+          <option value='new-Indre-Haugalandet'>Etne</option>
+          <option value='new-Valdres'>Etnedal</option>
+          <option value='new-Ofoten'>Evenes</option>
+          <option value='new-Setesdal'>Evje og Hornnes</option>
+          <option value='new-Lister-regionen'>Farsund</option>
+          <option value='new-Salten'>Fauske</option>
+          <option value='new-Nord-Hordaland'>Fedje</option>
+          <option value='new-Nedre-Romerike'>Fet</option>
+          <option value='new-Nord-Jaeren'>Finnøy</option>
+          <option value='new-Sunnhordaland'>Fitjar</option>
+          <option value='new-Firda'>Fjaler</option>
+          <option value='new-Bergen'>Fjell</option>
+          <option value='new-Lofoten'>Flakstad</option>
+          <option value='new-Namdalskysten'>Flatanger</option>
+          <option value='new-Lister-regionen'>Flekkefjord</option>
+          <option value='new-Kongsberg'>Flesberg</option>
+          <option value='new-Firda'>Flora</option>
+          <option value='new-Hallingdal'>Flå</option>
+          <option value='new-Tynset'>Folldal</option>
+          <option value='new-Ryfylke'>Forsand</option>
+          <option value='new-Namdalskysten'>Fosnes</option>
+          <option value='new-Nedre-Glomma'>Fredrikstad</option>
+          <option value='new-Follo'>Frogn</option>
+          <option value='new-Ostre-Agder'>Froland</option>
+          <option value='new-Innherredsregionen'>Frosta</option>
+          <option value='new-Romsdal'>Fræna</option>
+          <option value='new-Kystfosen'>Frøya</option>
+          <option value='new-Bergen'>Fusa</option>
+          <option value='new-Vest-Telemark'>Fyresdal</option>
+          <option value='new-Firda'>Førde</option>
+          <option value='new-Nord-Troms'>Gáivuotna Kåfjord</option>
+          <option value='new-Nordkinn'>Gamvik</option>
+          <option value='new-Firda'>Gaular</option>
+          <option value='new-Lillehammer'>Gausdal</option>
+          <option value='new-Salten'>Gildeskål</option>
+          <option value='new-Sunnmore'>Giske</option>
+          <option value='new-Nordmore'>Gjemnes</option>
+          <option value='new-Ovre-Romerike'>Gjerdrum</option>
+          <option value='new-Ostre-Agder'>Gjerstad</option>
+          <option value='new-Nord-Jaeren'>Gjesdal</option>
+          <option value='new-Gjovik'>Gjøvik</option>
+          <option value='new-Nordfjord'>Gloppen</option>
+          <option value='new-Hallingdal'>Gol</option>
+          <option value='new-Hadeland'>Gran</option>
+          <option value='new-Midtre-Helgeland'>Grane</option>
+          <option value='new-Voss-og-Hardanger'>Granvin</option>
+          <option value='new-Harstad-regionen'>Gratangen</option>
+          <option value='new-Ostre-Agder'>Grimstad</option>
+          <option value='new-Indre-Namdal'>Grong</option>
+          <option value='new-Kongsvinger'>Grue</option>
+          <option value='new-Nord-Hordaland'>Gulen</option>
+          <option value='new-Alta'>Guovdageaidnu Kautokeino</option>
+          <option value='new-Salten'>Hábmer Hamarøy</option>
+          <option value='new-Vesteralen'>Hadsel</option>
+          <option value='new-Halden'>Halden</option>
+          <option value='new-Nordmore'>Halsa</option>
+          <option value='new-Hamar'>Hamar</option>
+          <option value='new-Hammerfest'>Hammerfest</option>
+          <option value='new-Sunnmore'>Haram</option>
+          <option value='new-Sunnmore'>Hareid</option>
+          <option value='new-Harstad-regionen'>Harstad</option>
+          <option value='new-Alta'>Hasvik</option>
+          <option value='new-Midtre-Helgeland'>Hattfjelldal</option>
+          <option value='new-Jaeren'>Haugesund</option>
+          <option value='new-Kystfosen'>Hemne</option>
+          <option value='new-Ytre-Helgeland'>Hemnes</option>
+          <option value='new-Hallingdal'>Hemsedal</option>
+          <option value='new-Sunnmore'>Herøy (M. og R.)</option>
+          <option value='new-Ytre-Helgeland'>Herøy (Nordl.)</option>
+          <option value='new-Kystfosen'>Hitra</option>
+          <option value='new-Midt-Telemark'>Hjartdal</option>
+          <option value='new-Ryfylke'>Hjelmeland</option>
+          <option value='new-Indre-Ostfold'>Hobøl</option>
+          <option value='new-Horten-Holmestrand'>Hof</option>
+          <option value='new-Hallingdal'>Hol</option>
+          <option value='new-Ringerike'>Hole</option>
+          <option value='new-Horten-Holmestrand'>Holmestrand</option>
+          <option value='new-Rorosregionen'>Holtålen</option>
+          <option value='new-Nordfjord'>Hornindal</option>
+          <option value='new-Horten-Holmestrand'>Horten</option>
+          <option value='new-Ovre-Romerike'>Hurdal</option>
+          <option value='new-Drammen'>Hurum</option>
+          <option value='new-Nedre-Glomma'>Hvaler</option>
+          <option value='new-Firda'>Hyllestad</option>
+          <option value='new-Lister-regionen'>Hægebostad</option>
+          <option value='new-Firda'>Høyanger</option>
+          <option value='new-Indre-Namdal'>Høylandet</option>
+          <option value='new-Haugalandet'>Hå</option>
+          <option value='new-Harstad-regionen'>Ibestad</option>
+          <option value='new-Innherredsregionen'>Inderøy</option>
+          <option value='new-Kristiansand'>Iveland</option>
+          <option value='new-Ringerike'>Jevnaker</option>
+          <option value='new-Voss-og-Hardanger'>Jondal</option>
+          <option value='new-Firda'>Jølster</option>
+          <option value='new-Midt-Finnmark'>Kárásjohka Karasjok</option>
+          <option value='new-Tromso'>Karlsøy</option>
+          <option value='new-Jaeren'>Karmøy</option>
+          <option value='new-Haugalandet'>Klepp</option>
+          <option value='new-Trondheim'>Klæbu</option>
+          <option value='new-Kongsberg'>Kongsberg</option>
+          <option value='new-Kongsvinger'>Kongsvinger</option>
+          <option value='new-Grenland'>Kragerø</option>
+          <option value='new-Kristiansand'>Kristiansand</option>
+          <option value='new-Nordmore'>Kristiansund</option>
+          <option value='new-Midtfylke'>Krødsherad</option>
+          <option value='new-Hammerfest'>Kvalsund</option>
+          <option value='new-Voss-og-Hardanger'>Kvam</option>
+          <option value='new-Lister-regionen'>Kvinesdal</option>
+          <option value='new-Sunnhordaland'>Kvinnherad</option>
+          <option value='new-Vest-Telemark'>Kviteseid</option>
+          <option value='new-Nord-Jaeren'>Kvitsøy</option>
+          <option value='new-Harstad-regionen'>Kvæfjord</option>
+          <option value='new-Nord-Troms'>Kvænangen</option>
+          <option value='new-Larvik'>Lardal</option>
+          <option value='new-Larvik'>Larvik</option>
+          <option value='new-Midt-Troms'>Lavangen</option>
+          <option value='new-Nordkinn'>Lebesby</option>
+          <option value='new-Sogndal'>Leikanger</option>
+          <option value='new-Nordre-Helgeland'>Leirfjord</option>
+          <option value='new-Namdalskysten'>Leka</option>
+          <option value='new-Trondheim'>Leksvik</option>
+          <option value='new-Midt-Troms'>Lenvik</option>
+          <option value='new-Gudbrandsdalen'>Lesja</option>
+          <option value='new-Innherredsregionen'>Levanger</option>
+          <option value='new-Drammen'>Lier</option>
+          <option value='new-Indre-Namdal'>Lierne</option>
+          <option value='new-Lillehammer'>Lillehammer</option>
+          <option value='new-Kristiansand'>Lillesand</option>
+          <option value='new-Lindesnes-regionen'>Lindesnes</option>
+          <option value='new-Nord-Hordaland'>Lindås</option>
+          <option value='new-Gudbrandsdalen'>Lom</option>
+          <option value='new-Alta'>Loppa</option>
+          <option value='new-Dalane'>Lund</option>
+          <option value='new-Hadeland'>Lunner</option>
+          <option value='new-Nordre-Helgeland'>Lurøy</option>
+          <option value='new-Sogndal'>Luster</option>
+          <option value='new-Lister-regionen'>Lyngdal</option>
+          <option value='new-Tromso'>Lyngen</option>
+          <option value='new-Laerdal'>Lærdal</option>
+          <option value='new-Ofoten'>Lødingen</option>
+          <option value='new-Nedre-Romerike'>Lørenskog</option>
+          <option value='new-Hamar'>Løten</option>
+          <option value='new-Trondheim'>Malvik</option>
+          <option value='new-Lindesnes-regionen'>Mandal</option>
+          <option value='new-Indre-Ostfold'>Marker</option>
+          <option value='new-Lindesnes-regionen'>Marnardal</option>
+          <option value='new-Nord-Hordaland'>Masfjorden</option>
+          <option value='new-Nord-Hordaland'>Meland</option>
+          <option value='new-Oppdalsregionen'>Meldal</option>
+          <option value='new-Trondheim'>Melhus</option>
+          <option value='new-Salten'>Meløy</option>
+          <option value='new-Trondheim'>Meråker</option>
+          <option value='new-Romsdal'>Midsund</option>
+          <option value='new-Oppdalsregionen'>Midtre Gauldal</option>
+          <option value='new-Nord-Hordaland'>Modalen</option>
+          <option value='new-Midtfylke'>Modum</option>
+          <option value='new-Romsdal'>Molde</option>
+          <option value='new-Lofoten'>Moskenes</option>
+          <option value='new-Moss'>Moss</option>
+          <option value='new-Midt-Troms'>Målselv</option>
+          <option value='new-Hammerfest'>Måsøy</option>
+          <option value='new-Namdalskysten'>Namdalseid</option>
+          <option value='new-Namdalskysten'>Namsos</option>
+          <option value='new-Indre-Namdal'>Namsskogan</option>
+          <option value='new-Ovre-Romerike'>Nannestad</option>
+          <option value='new-Ofoten'>Narvik</option>
+          <option value='new-Firda'>Naustdal</option>
+          <option value='new-Drammen'>Nedre Eiker</option>
+          <option value='new-Ovre-Romerike'>Nes (Ak.)</option>
+          <option value='new-Hallingdal'>Nes (Busk.)</option>
+          <option value='new-Nordre-Helgeland'>Nesna</option>
+          <option value='new-Follo'>Nesodden</option>
+          <option value='new-Romsdal'>Nesset</option>
+          <option value='new-Vest-Telemark'>Nissedal</option>
+          <option value='new-Nedre-Romerike'>Nittedal</option>
+          <option value='new-Midt-Telemark'>Nome</option>
+          <option value='new-Valdres'>Nord-Aurdal</option>
+          <option value='new-Sunnmore'>Norddal</option>
+          <option value='new-Gudbrandsdalen'>Nord-Fron</option>
+          <option value='new-Midt-Finnmark'>Nordkapp</option>
+          <option value='new-Kongsvinger'>Nord-Odal</option>
+          <option value='new-Gjovik'>Nordre Land</option>
+          <option value='new-Nord-Troms'>Nordreisa</option>
+          <option value='new-Kongsberg'>Nore og Uvdal</option>
+          <option value='new-Midt-Telemark'>Notodden</option>
+          <option value='new-Namdalskysten'>Nærøy</option>
+          <option value='new-Tonsberg'>Nøtterøy</option>
+          <option value='new-Voss-og-Hardanger'>Odda</option>
+          <option value='new-Oppdalsregionen'>Oppdal</option>
+          <option value='new-Follo'>Oppegård</option>
+          <option value='new-Trondheim'>Orkdal</option>
+          <option value='new-Rorosregionen'>Os (Hedm.)</option>
+          <option value='new-Bergen'>Os (Hord.)</option>
+          <option value='new-Namdalskysten'>Osen</option>
+          <option value='new-Oslo'>Oslo kommune</option>
+          <option value='new-Bergen'>Osterøy</option>
+          <option value='new-Namdalskysten'>Overhalla</option>
+          <option value='new-Midt-Finnmark'>Porsanger Porsángu Porsanki</option>
+          <option value='new-Grenland'>Porsgrunn</option>
+          <option value='new-Nord-Hordaland'>Radøy</option>
+          <option value='new-Nedre-Glomma'>Rakkestad</option>
+          <option value='new-Nordre-Helgeland'>Rana</option>
+          <option value='new-Nord-Jaeren'>Randaberg</option>
+          <option value='new-Romsdal'>Rauma</option>
+          <option value='new-Horten-Holmestrand'>Re</option>
+          <option value='new-Tynset'>Rendalen</option>
+          <option value='new-Oppdalsregionen'>Rennebu</option>
+          <option value='new-Nord-Jaeren'>Rennesøy</option>
+          <option value='new-Trondheim'>Rindal</option>
+          <option value='new-Lillehammer'>Ringebu</option>
+          <option value='new-Ringerike'>Ringerike</option>
+          <option value='new-Hamar'>Ringsaker</option>
+          <option value='new-Trondheim'>Rissa</option>
+          <option value='new-Ostre-Agder'>Risør</option>
+          <option value='new-Kystfosen'>Roan</option>
+          <option value='new-Kongsberg'>Rollag</option>
+          <option value='new-Moss'>Rygge</option>
+          <option value='new-Nedre-Romerike'>Rælingen</option>
+          <option value='new-Nordre-Helgeland'>Rødøy</option>
+          <option value='new-Indre-Ostfold'>Rømskog</option>
+          <option value='new-Rorosregionen'>Røros</option>
+          <option value='new-Salten'>Røst</option>
+          <option value='new-Drammen'>Røyken</option>
+          <option value='new-Indre-Namdal'>Røyrvik</option>
+          <option value='new-Moss'>Råde</option>
+          <option value='new-Midt-Troms'>Salangen</option>
+          <option value='new-Salten'>Saltdal</option>
+          <option value='new-Bergen'>Samnanger</option>
+          <option value='new-Sunnmore'>Sande (M. og R.)</option>
+          <option value='new-Drammen'>Sande (Vestf.)</option>
+          <option value='new-Sandefjord'>Sandefjord</option>
+          <option value='new-Nord-Jaeren'>Sandnes</option>
+          <option value='new-Sunnmore'>Sandøy</option>
+          <option value='new-Nedre-Glomma'>Sarpsborg</option>
+          <option value='new-Indre-Haugalandet'>Sauda</option>
+          <option value='new-Midt-Telemark'>Sauherad</option>
+          <option value='new-Gudbrandsdalen'>Sel</option>
+          <option value='new-Trondheim'>Selbu</option>
+          <option value='new-Nordfjord'>Selje</option>
+          <option value='new-Vest-Telemark'>Seljord</option>
+          <option value='new-Midtfylke'>Sigdal</option>
+          <option value='new-Grenland'>Siljan</option>
+          <option value='new-Lister-regionen'>Sirdal</option>
+          <option value='new-Trondheim'>Skaun</option>
+          <option value='new-Nedre-Romerike'>Skedsmo</option>
+          <option value='new-Follo'>Ski</option>
+          <option value='new-Grenland'>Skien</option>
+          <option value='new-Indre-Ostfold'>Skiptvet</option>
+          <option value='new-Nord-Troms'>Skjervøy</option>
+          <option value='new-Gudbrandsdalen'>Skjåk</option>
+          <option value='new-Sunnmore'>Skodje</option>
+          <option value='new-Harstad-regionen'>Skånland</option>
+          <option value='new-Nordmore'>Smøla</option>
+          <option value='new-Kystfosen'>Snillfjord</option>
+          <option value='new-Innherredsregionen'>Snåase Snåsa</option>
+          <option value='new-Sogndal'>Sogndal</option>
+          <option value='new-Dalane'>Sokndal</option>
+          <option value='new-Nord-Jaeren'>Sola</option>
+          <option value='new-Firda'>Solund</option>
+          <option value='new-Kristiansand'>Songdalen</option>
+          <option value='new-Vesteralen'>Sortland</option>
+          <option value='new-Indre-Ostfold'>Spydeberg</option>
+          <option value='new-Hamar'>Stange</option>
+          <option value='new-Nord-Jaeren'>Stavanger</option>
+          <option value='new-Salten'>Steigen</option>
+          <option value='new-Innherredsregionen'>Steinkjer</option>
+          <option value='new-Trondheim'>Stjørdal</option>
+          <option value='new-Sandefjord'>Stokke</option>
+          <option value='new-Sunnhordaland'>Stord</option>
+          <option value='new-Sunnmore'>Stordal</option>
+          <option value='new-Elverum'>Stor-Elvdal</option>
+          <option value='new-Tromso'>Storfjord</option>
+          <option value='new-Ryfylke'>Strand</option>
+          <option value='new-Sunnmore'>Stranda</option>
+          <option value='new-Nordfjord'>Stryn</option>
+          <option value='new-Sunnmore'>Sula</option>
+          <option value='new-Indre-Haugalandet'>Suldal</option>
+          <option value='new-Bergen'>Sund</option>
+          <option value='new-Nordmore'>Sunndal</option>
+          <option value='new-Nordmore'>Surnadal</option>
+          <option value='new-Jaeren'>Sveio</option>
+          <option value='new-Drammen'>Svelvik</option>
+          <option value='new-Sunnmore'>Sykkylven</option>
+          <option value='new-Kristiansand'>Søgne</option>
+          <option value='new-Sor-Helgeland'>Sømna</option>
+          <option value='new-Gjovik'>Søndre Land</option>
+          <option value='new-Valdres'>Sør-Aurdal</option>
+          <option value='new-Salten'>Sørfold</option>
+          <option value='new-Lillehammer'>Sør-Fron</option>
+          <option value='new-Kongsvinger'>Sør-Odal</option>
+          <option value='new-Midt-Troms'>Sørreisa</option>
+          <option value='new-Nedre-Romerike'>Sørum</option>
+          <option value='new-Varanger'>Sør-Varanger</option>
+          <option value='new-Haugalandet'>Time</option>
+          <option value='new-Nordmore'>Tingvoll</option>
+          <option value='new-Midt-Telemark'>Tinn</option>
+          <option value='new-Ofoten'>Tjeldsund</option>
+          <option value='new-Tonsberg'>Tjøme</option>
+          <option value='new-Vest-Telemark'>Tokke</option>
+          <option value='new-Tynset'>Tolga</option>
+          <option value='new-Midt-Troms'>Torsken</option>
+          <option value='new-Midt-Troms'>Tranøy</option>
+          <option value='new-Tromso'>Tromsø</option>
+          <option value='new-Trondheim'>Trondheim</option>
+          <option value='new-Elverum'>Trysil</option>
+          <option value='new-Nordre-Helgeland'>Træna</option>
+          <option value='new-Indre-Ostfold'>Trøgstad</option>
+          <option value='new-Ostre-Agder'>Tvedestrand</option>
+          <option value='new-Rorosregionen'>Tydal</option>
+          <option value='new-Tynset'>Tynset</option>
+          <option value='new-Sunnhordaland'>Tysnes</option>
+          <option value='new-Jaeren'>Tysvær</option>
+          <option value='new-Tonsberg'>Tønsberg</option>
+          <option value='new-Ovre-Romerike'>Ullensaker</option>
+          <option value='new-Voss-og-Hardanger'>Ullensvang</option>
+          <option value='new-Sunnmore'>Ulstein</option>
+          <option value='new-Voss-og-Hardanger'>Ulvik</option>
+          <option value='new-Varanger'>Unjárga Nesseby</option>
+          <option value='new-Jaeren'>Utsira</option>
+          <option value='new-Varanger'>Vadsø</option>
+          <option value='new-Bergen'>Vaksdal</option>
+          <option value='new-Setesdal'>Valle</option>
+          <option value='new-Valdres'>Vang</option>
+          <option value='new-Sunnmore'>Vanylven</option>
+          <option value='new-Varanger'>Vardø</option>
+          <option value='new-Midtre-Helgeland'>Vefsn</option>
+          <option value='new-Sor-Helgeland'>Vega</option>
+          <option value='new-Ostre-Agder'>Vegårshei</option>
+          <option value='new-Kristiansand'>Vennesla</option>
+          <option value='new-Innherredsregionen'>Verdal</option>
+          <option value='new-Innherredsregionen'>Verran</option>
+          <option value='new-Follo'>Vestby</option>
+          <option value='new-Romsdal'>Vestnes</option>
+          <option value='new-Valdres'>Vestre Slidre</option>
+          <option value='new-Gjovik'>Vestre Toten</option>
+          <option value='new-Lofoten'>Vestvågøy</option>
+          <option value='new-Sor-Helgeland'>Vevelstad</option>
+          <option value='new-Sogndal'>Vik</option>
+          <option value='new-Namdalskysten'>Vikna</option>
+          <option value='new-Indre-Haugalandet'>Vindafjord</option>
+          <option value='new-Vest-Telemark'>Vinje</option>
+          <option value='new-Sunnmore'>Volda</option>
+          <option value='new-Voss-og-Hardanger'>Voss</option>
+          <option value='new-Salten'>Værøy</option>
+          <option value='new-Lofoten'>Vågan</option>
+          <option value='new-Nordfjord'>Vågsøy</option>
+          <option value='new-Gudbrandsdalen'>Vågå</option>
+          <option value='new-Kongsvinger'>Våler (Hedm.)</option>
+          <option value='new-Moss'>Våler (Østf.)</option>
+          <option value='new-Vesteralen'>Øksnes</option>
+          <option value='new-Kystfosen'>Ørland</option>
+          <option value='new-Sunnmore'>Ørskog</option>
+          <option value='new-Sunnmore'>Ørsta</option>
+          <option value='new-Gjovik'>Østre Toten</option>
+          <option value='new-Drammen'>Øvre Eiker</option>
+          <option value='new-Lillehammer'>Øyer</option>
+          <option value='new-Bergen'>Øygarden</option>
+          <option value='new-Valdres'>Øystre Slidre</option>
+          <option value='new-Kystfosen'>Åfjord</option>
+          <option value='new-Hallingdal'>Ål</option>
+          <option value='new-Sunnmore'>Ålesund</option>
+          <option value='new-Ostre-Agder'>Åmli</option>
+          <option value='new-Elverum'>Åmot</option>
+          <option value='new-Laerdal'>Årdal</option>
+          <option value='new-Follo'>Ås</option>
+          <option value='new-Lindesnes-regionen'>Åseral</option>
+          <option value='new-Kongsvinger'>Åsnes</option>
+        </select>
       </div>
-      <a link="#0" class="zoomBtn inn" id="zoomInn"><img src="images/pluss.png" alt="pluss-btn"></a>
+      <a href="pdf/kommuner-alle.pdf" target="_blank" class="download-zip" id="download-zip" alt="Last ned alle kommunekart som pdf-filer." title="Last ned alle kommunekart som pdf-filer.">
+        <span class="micro">Last ned</span> PDF<span class="small">-kart<span>
+      </a>
     </div>
-  </div>
 
-  <div class="nho-share">
-    <a class="nho-link nho-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.nho.no/Politikk-og-analyse/Offentlig-sektor-og-naringslivet/kommunereform/" rel='nofollow' target='_blank'></a>
-    <a class="nho-link nho-twitter" href='https://twitter.com/intent/tweet?text=https://www.nho.no/Politikk-og-analyse/Offentlig-sektor-og-naringslivet/kommunereform/' rel='nofollow' target='_blank'></a>      
-    <a class="nho-link nho-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.nho.no/Politikk-og-analyse/Offentlig-sektor-og-naringslivet/kommunereform/&title=Kommunereform&summary=&source=" target="_blank"></a>
-    <a class="nho-link nho-embed" id="embed-model-link" href="#0"></a>
-  </div>
+    <div class="nho-embed-modal">
+      <div class="dismiss-container">
+        <a href="#0" class="dismiss-modal">&times;</a>
+      </div>
+      <textarea name="embed" id="embed-content">
+        <div class='iframe-wrapp' style="position: relative; padding-bottom: 100%; padding-top: 30px; height: 0; border: none;">
+          <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://nho-municipality-map.divshot.io/?m=####&d=300" frameborder="0" ></iframe>
+        </div>
+      </textarea>
+    </div>
 
-  <div class="svg-container">
+    <div class="hint">
+      <div class="old-muni">
+        <span></span> Gammel kommune
+      </div>
+      <div class="new-muni">
+        <span></span> Ny kommune
+      </div>
+    </div>
 
-    <svg id="municipalities-map" class="svg-content" preserveAspectRatio="xMinYMin meet" viewBox="0 0 4000 4000" xmlns="http://www.w3.org/2000/svg">
-      <title>
-        Municipality map
-      </title>
+    <div class="slide-controls">
+      <div class="zoom-container">
+        <label for="zoom" class="zoom-label">Kart zoom</label>
+        <a link="#0" class="zoomBtn out" id="zoomOut"><img src="images/minus.png" alt="minus-btn"></a>
+        <div class="slider-container">
+          <input class="slider" type="range" name="zoom" id="zoom" value="1" min="0.9" max="20" step="0.1">
+        </div>
+        <a link="#0" class="zoomBtn inn" id="zoomInn"><img src="images/pluss.png" alt="pluss-btn"></a>
+      </div>
+    </div>
+
+    <div class="nho-share">
+      <a class="nho-link nho-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.nho.no/Politikk-og-analyse/Offentlig-sektor-og-naringslivet/kommunereform/" rel='nofollow' target='_blank'></a>
+      <a class="nho-link nho-twitter" href='https://twitter.com/intent/tweet?text=https://www.nho.no/Politikk-og-analyse/Offentlig-sektor-og-naringslivet/kommunereform/' rel='nofollow' target='_blank'></a>      
+      <a class="nho-link nho-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.nho.no/Politikk-og-analyse/Offentlig-sektor-og-naringslivet/kommunereform/&title=Kommunereform&summary=&source=" target="_blank"></a>
+      <a class="nho-link nho-embed" id="embed-model-link" href="#0"></a>
+    </div>
+
+    <div class="svg-container">
+
+      <svg id="municipalities-map" class="svg-content" preserveAspectRatio="xMinYMin meet" viewBox="0 0 4000 4000" xmlns="http://www.w3.org/2000/svg">
+        <title>
+          Municipality map
+        </title>
 
       </defs>
       <g id="map-container" fill="none" fill-rule="evenodd">
@@ -1131,7 +1129,7 @@
             <g class="new-municipality" id="new-Namdalskysten">
               <path class="ocean" fill-opacity=".01" fill="#D8D8D8" d="M1581.345 1989.43l13.757-27.01-30.85-4.084-25.277 46.604-10 2.667-5.666-3.667-12-11.333-28.668 2.333-19.333 11.667-3.668 14.333-4.667 26.333 11.667 10.334 24.333-2.334 12.667 15.334 5.667 15.666-6.668 8.334-27 11.333-20.667 17.667 4 12.333-11.333 9.667-24.333 10.333-4.335 22.667-11.333 21.333 4.667 1.333 11.665-4 7.667 9.644 81.333-25.667 12.667 18.333 40.333-17 44.667-53.666-11.667-36.334-21 .334 36.667-38.667 15.667-35.667 5-13.666-21.335-3.334-16.333-18.666-12.333 9.333-3.965-2.82z"/>
               <path d="M1414.133 2198.22v.003l-.597.31h.954c1.108.005 1.674-.202 2.432-.887.5-.452.63-.773.315-.773-.194 0-2.153.85-3.104 1.347zm16.552-12.184c.592.18 1.195.334 1.34.334.284.007.87-.224.87-.344 0-.196-.455-.666-1.454-1.505-1.18-.99-1.65-1.245-2.284-1.245-.334 0-.43.06-.535.328-.153.398-.376 1.232-.376 1.418 0 .165.987.576 2.44 1.016zm-7.288.545l-.33.78.39.314c.217.172.563.488.77.7.372.383.393.39 1.353.36.535-.018 1.01-.07 1.058-.115.157-.16-.52-1.117-1.545-2.19-1.172-1.224-1.11-1.23-1.696.15zm-9.264 9.22c.28 0 2.87-.617 2.957-.704.072-.072-.246-.295-.867-.607-.933-.47-.993-.485-1.207-.29-.284.257-.943 1.277-.943 1.46 0 .077.027.14.06.14zm17.35-21.027c.232.28 1.594.144 1.93-.193.196-.195.224-.298.127-.452-.27-.43-.465-.44-.99-.06-.277.2-.665.4-.86.443-.305.068-.335.107-.207.262zm-.79 1.47c-.097-.154-1.266-.837-1.436-.838-.113 0-1.252 1.33-1.252 1.464 0 .117 2.57-.3 2.712-.442.03-.03.02-.113-.025-.184zm59.49-50.53c.032-.075-.65-.83-1.518-1.68-1.233-1.207-1.69-1.56-2.106-1.628-.94-.154-1.02.04-.536 1.29l.426 1.1 1.84.528c1.01.292 1.862.465 1.894.39zm-3.623 6.603c0-.164-.215-.232-1.475-.468-.71-.133-1.004-.265-1.182-.535l-.24-.36-.667.454c-.58.392-.683.545-.774 1.14l-.105.685 1.27 1.256c.698.69 1.306 1.255 1.35 1.255.042 0 .152-.12.24-.262.087-.142.305-.5.486-.792l.327-.532-.672-.756c-.37-.416-.63-.8-.577-.85.054-.052.53-.095 1.058-.095.53 0 .962-.062.962-.14zm-20.07 7.155c.28.014 1.676-1.18 1.93-1.65.193-.357.18-.42-.13-.707-.274-.254-.455-.296-.94-.22-.332.05-.656.18-.724.294-.19.316-1.29.245-1.894-.123-.516-.315-.538-.317-.74-.047-.427.575-.248.86 1.053 1.668.685.427 1.335.786 1.446.786zm.848 6.522l.41-.453.412-.453.638.352.638.352-.11-.653c-.058-.36-.14-.705-.176-.767-.038-.063-.438-.113-.89-.113-1.052 0-2.01-.36-2.527-.953l-.407-.466-.428.39c-.354.32-.513.368-.922.28-.272-.062-.493-.045-.493.026 0 .233.806.464 1.53.438.684-.024.702-.012 1.51.997l.815 1.022zm2.944-7.215l.564.222.043-.546c.025-.3-.016-.813-.087-1.142l-.13-.598-.956 1.84.564.223h.002zm-2.16-6.39l-1.58-1.18-.096-.763c-.07-.54-.188-.822-.41-.956-.42-.26-.51-.12-.28.43.156.36.162.59.024 1.04-.15.493-.32.654-1.177 1.118-.552.3-1.06.52-1.133.498-.07-.024-.524-.61-1.006-1.305-.484-.694-.963-1.288-1.068-1.32-.136-.042-.19.142-.19.606 0 .585.124.833 1.033 2.064.568.77 1.234 1.515 1.48 1.655.246.142 1.2.39 2.117.548h-.006c2.095.364 2.108.365 2.712.116.506-.21 1.16-.886 1.16-1.2 0-.095-.712-.703-1.58-1.352zm-6.556-6.998c-.193-.124-.382-.227-.424-.227-.04 0-.21.302-.376.67l-.3.672.635 1.03c.614.993.664 1.036 1.396 1.17.675.12.787.103 1.013-.168.266-.318.545-2.556.373-3-.15-.38-.557-.435-1.282-.17-.614.22-.72.223-1.034.022zm16.462-4.27c1.155-.183 1.492-.372 1.695-.946.423-1.195-.06-3.69-.713-3.67-.15.003-1.116.46-2.148 1.016-1.71.918-1.907 1.067-2.202 1.673-.29.595-.375.662-.817.642-.612-.027-.666.332-.124.834.32.295.464.326 1.124.237.553-.074.87-.04 1.188.13h-.002c.518.273.75.283 1.998.084zm-4.634 12.167c.032.094 1.18.382 2.55.642v-.007c1.37.26 2.892.485 3.38.485l.887.02-.61-.71c-.335-.39-1.098-1.18-1.695-1.755-.682-.658-1.388-1.546-1.898-2.39-.947-1.568-1.98-2.667-2.135-2.27-.054.138-.066.536-.028.886.066.596.025.68-.684 1.404l-.755.77.926.5c.51.276.93.548.93.606 0 .058-.207.453-.46.877-.255.424-.438.85-.406.94zm10.038-8.304c-.212.117-.18.183.222.465.26.18.83.454 1.27.61 1.585.554 1.537.3-.112-.596-.822-.445-1.2-.577-1.38-.48zm1.913-15.472c0-.498-.09-.784-.324-1.03-.3-.314-.353-.322-.754-.12-.653.333-1.19 1.222-1.19 1.933.018 1.226.194 1.776.6 1.875.21.05.662-.002 1.01-.115.76-.25 1.068-.794.818-1.44-.087-.227-.16-.723-.16-1.102zm-25.478 38.434c.858.555.98.595 1.15.38.223-.277.124-1.28-.252-2.59-.2-.697-.372-.948-.998-1.457-1.187-.964-1.424-.83-.995.564.188.62.26 1.187.212 1.707l-.076.777.96.62zm74.174-61.194c.535-.158 1.1-.427 1.258-.6.27-.3.27-.32 0-.512-.243-.175-.395-.13-1.213.36-.874.527-1.216.617-5.36 1.402-4.052.768-4.535.892-5.694 1.466-.695.345-1.607.913-2.024 1.264-.552.463-1.08.733-1.935.988-.645.193-1.174.43-1.175.533-.003.374.524.456 1.778.276 1.292-.187 1.56-.124 1.56.366 0 .64-.354.796-2.266.987-1.72.17-2.39.37-2.212.656.04.064.9.267 1.91.45 2.026.367 2.695.714 2.507 1.3-.086.26-.27.33-1.18.42-.902.087-1.14.17-1.433.5-.194.215-.358.457-.358.535-.003.08.237.39.533.687l.538.542-.616.733c-.34.403-.58.824-.538.933.043.11.078.265.078.342 0 .09.83.105 2.164.047l2.163-.096 1.044.472c1.308.593 1.682.493 2.163-.582.306-.683.36-.728.987-.79.545-.055.777.01 1.298.356.366.245.838.423 1.116.423.323 0 .46.06.412.186-.472 1.247-.486 1.116.33 3.147.425 1.054.944 2.14 1.155 2.412.213.273 1.085.95 1.937 1.506 1.08.703 1.737 1.253 2.16 1.808l.005.002.607.797.787-1.603c.5-1.015.797-1.808.797-2.162.008-.48.093-.613.616-.954.336-.218.608-.514.608-.665 0-.15-.104-1.475-.23-2.948-.22-2.58-.216-2.713.07-3.632 1.077-3.476 1.547-5.332 1.668-6.59.206-2.135-.144-3.406-.936-3.406-.16 0-.8.145-1.422.323l-1.13.323-1.272-.388-1.273-.39-.775.29c-1.024.384-1.227.37-1.227-.076 0-.504.816-1.085 2.02-1.44zm-65.123-51.134l-.71 1.052c-.392.58-.673 1.09-.626 1.138.18.175.854-.274 1.26-.84.232-.325.812-1.192 1.288-1.927l.866-1.34.87-.102c1.04-.12 1.628-.45 2.94-1.643.782-.712 1.207-1.287 2.05-2.774.84-1.483 1.137-1.885 1.42-1.925.2-.028.418.007.49.077.17.168-.155 2.15-.4 2.438-.107.123-.373.627-.592 1.12-.32.72-.792 1.287-2.405 2.887-1.103 1.094-2.122 2.056-2.27 2.134-.185.102-.405.074-.74-.096-.515-.263-.502-.27-1.145.622-.243.337-1.362 1.403-2.486 2.37-1.124.965-2.132 1.84-2.24 1.937-.263.244-.07.682.3.682.167 0 1.135-.75 2.215-1.718 1.056-.945 2.006-1.718 2.113-1.718.107 0 .235.16.286.36.075.298-.24.775-1.832 2.768l-1.922 2.408.353.29c.193.16.42.267.503.242.084-.027 1.416-.376 2.96-.774l2.81-.725 2.58-1.672c2.363-1.53 2.782-1.872 4.95-4.04 2.156-2.157 3.472-3.667 3.89-4.463.087-.164.24-.772.346-1.35.185-1.037.207-1.07 1.596-2.54l1.41-1.49.474.273c.76.436 1.236.226 2.935-1.294 1.464-1.31 1.606-1.398 3.633-2.22l2.11-.853.147.377c.208.54.214.525-.576 1.29-.49.47-1.203.914-2.217 1.377-1.25.57-1.786.936-3.264 2.228-.978.854-2.28 1.827-2.91 2.173-.625.345-1.212.72-1.3.836-.09.115-.395 1.028-.677 2.03-.456 1.623-.562 1.85-.975 2.098-.255.15-.518.297-.58.317-.065.022-.306.542-.536 1.157l-.42 1.118-2.188 1.228-2.19 1.23-1.184 1.823c-1.133 1.747-1.184 1.863-1.184 2.705 0 1.224.275 1.677 1.203 1.98.413.136 1.037.225 1.386.2l.634-.048.652-1.993c.383-1.173.794-2.143.997-2.356.19-.2.75-.507 1.244-.685.744-.267.978-.44 1.366-1.017.34-.508.73-.833 1.447-1.207.63-.33 1.113-.71 1.355-1.068.404-.6.5-.648 1.597-.8.895-.123 1.918-.972 2.786-2.31.634-.98.5-.933 1.907-.665.72.138 1.007-.08 2.484-1.9 1.253-1.542 1.213-1.388.928-3.67-.18-1.433-.175-1.53.074-1.53.532 0 1.047.36 1.43 1.003l.39.657.483-.356c.265-.195 1.12-.814 1.9-1.375l1.416-1.02.44.435.44.434-3.767 4.63.91.215c1.41.333 1.648.188 4.443-2.682 1.32-1.356 2.495-2.488 2.61-2.514.25-.057.25.08.002 1.802-.182 1.263-.208 1.324-.83 1.847l-.642.54.537.645c.295.354.536.725.536.827 0 .1-.622 1.016-1.38 2.034l-1.38 1.85-.67 2.7c-.697 2.807-.756 3.203-.532 3.55.107.166.295.077.9-.425.736-.61.783-.628 1.305-.458.298.097.542.25.542.34 0 .09-.202.514-.448.943-.432.752-.438.79-.17 1.028.192.168.405.216.687.146.437-.108 1.143.17 1.143.447 0 .09-.284.6-.63 1.134-.78 1.204-.997 2.39-.437 2.39.187 0 1.027-.526 1.904-1.194.862-.658 1.638-1.196 1.725-1.196.085 0 .238.404.335.897.198.986.334 1.067 1.072.637.393-.227.466-.23.598-.036.092.123.114.478.07.79-.046.31-.01.696.076.86v-.002h-.002c.088.16.253.293.37.293.113 0 2.246-1.924 4.738-4.277 2.49-2.353 5.008-4.63 5.593-5.06 1.014-.745 1.156-.932 3.174-4.172 1.162-1.863 2.316-3.56 2.565-3.764l.45-.374.496.472.494.47.313-.306c.414-.408.883-1.33 1-1.97.07-.37-.03-.885-.355-1.823l-.452-1.305.283-.936c.155-.515.63-1.59 1.056-2.386.6-1.128.924-1.558 1.45-1.93 1.344-.95 5.003-6.156 4.442-6.322l-.476-.15c-.187-.06-.545.095-1.052.454-.423.3-1.196.687-1.72.86-.75.253-1.31.62-2.686 1.766-1.514 1.26-1.82 1.597-2.387 2.615-.595 1.07-.647 1.25-.618 2.14.015.534-.078 1.476-.206 2.092-.272 1.29-.762 1.874-1.866 2.23-1.013.327-1.354.1-1.483-.99-.09-.77-.266-1.11-1.57-3.06-1.71-2.56-1.852-2.663-3.67-2.663-1.404 0-1.52-.154-.608-.79.64-.444 1.98-1.908 1.98-2.16 0-.086-.178-.27-.394-.408-.37-.24-.51-.24-2.337 0-1.845.25-1.986.25-2.757 0-1.413-.456-1.863-.926-2.4-2.502-.536-1.575-.546-1.594-1.11-1.947-.4-.25-.41-.282-.197-.686l.222-.423-1.018-.096c-.56-.054-1.274-.096-1.587-.097-.313 0-.57-.067-.57-.148 0-.082.357-.334.792-.56 1.21-.63 2.533-1.928 2.7-2.653.213-.92-.023-1.037-1.136-.57-.755.316-1.013.36-1.52.248-.363-.08-1.494-.07-2.81.026l-2.2.157-3.416 1.393c-4.047 1.65-7.595 3.483-8.898 4.6-1.043.893-1.478.987-2.19.47-.783-.57-1.182-.326-3.59 2.2-1.978 2.072-2.204 2.26-2.91 2.44-1.5.377-1.946.815-3.406 3.344-1.363 2.36-2.177 3.36-2.604 3.2-.342-.13-.284-.625.21-1.818.258-.625.38-1.105.3-1.187-.242-.247-.84.484-1.26 1.54l-.405 1.012-.946.327c-1.077.373-1.368.404-1.298.138.027-.103.447-.874.935-1.713.487-.84.84-1.595.788-1.68-.143-.23-1.39-.17-2.433.116-.876.24-.93.283-1.38 1.12-.653 1.21-1.09 1.59-3.335 2.916-1.45.854-1.98 1.245-2.014 1.487-.05.35.202.498 1.156.678.54.103.518.128.793-.927l.17-.653.634.076c.35.044.89.188 1.204.32.54.23.57.28.57.92 0 .66-.02.69-.666.97-.514.224-.722.422-.9.864-.226.556-.28.587-1.648.97-1.496.422-1.794.642-2.11 1.567-.164.476-.14.53.62 1.39l.79.896zm30.63 14.335c.286-.255.546-.807.87-1.844.254-.814.418-1.525.365-1.58-.224-.217-.793.806-1.11 1.995-.186.696-.382 1.384-.434 1.53-.074.203-.002.18.31-.1zm-34.254-14.01c-.357-.352-.607-.17-1.152.836-.27.5-.46.912-.42.912.04 0 .373-.126.742-.283.83-.346 1.232-1.072.83-1.466zm-8.156 5.627zm12.894 4.49c0-.124-.16-.404-.356-.623-.354-.394-.37-.396-1.93-.313-1.3.07-1.676.147-2.145.438-.52.32-.57.412-.57 1.01 0 .363-.04.764-.09.895h-.003c-.08.202.068.237 1.01.237 1.002 0 1.234-.063 2.593-.71.908-.432 1.492-.797 1.49-.934zm-12.075-4.58c.366-.173.902-.762 1.765-1.944 1.322-1.806 1.355-1.84 2.03-2.07.375-.126.508-.332.892-1.377.498-1.352.48-1.753-.064-1.557-.25.09-.405.354-.585 1.005-.244.875-.254.885-1.07 1.168-.718.248-.968.455-1.91 1.573-.94 1.115-1.875 2.756-1.876 3.29 0 .218.213.195.818-.09zm38.337-4.322l-1.278.97-.17 1.387c-.094.764-.134 1.445-.094 1.514h-.002c.037.068.124.068.184 0 .168-.186 2.513-3.804 2.73-4.213.398-.747-.098-.623-1.37.342zm5.634.824c.657-2.34.708-2.683.404-2.683-.493 0-1.64.508-2.128.943-.792.706-.832 1.04-.182 1.528.605.454.647.69.284 1.582-.24.592-.24.632.03.825.707.51.91.23 1.592-2.196zm-5.865 10.138c.477.93.57 1.03.912.966.65-.122.593-.81-.183-2.28-.37-.7-.702-1.302-.738-1.34-.123-.132-.326.338-.423.98-.084.54-.018.793.432 1.674zm28.23 98.414c-.25 0-.51.083-.578.187-.215.327-.647 1.816-.647 2.202v.002c.005.305.077.237.397-.373.214-.41.418-.776.45-.812.035-.036.376.085.758.267.66.314.72.32 1.08.085.285-.175.605-.227 1.236-.175 1.02.084 2.16-.282 3.235-1.042.818-.577 2.308-2.365 2.2-2.64-.04-.1-.35-.266-.695-.368-.342-.1-.622-.226-.622-.28 0-.054.14-.594.315-1.203l.315-1.105-.37-.548c-.33-.49-.508-.586-1.69-.904l-1.32-.356-.915.86-.71-.383c-.597-.32-.8-.363-1.262-.25-.687.165-.983.772-1.114 2.278-.082.96-.046 1.154.446 2.35.294.72.536 1.438.536 1.602 0 .358-.426.605-1.044.605zm17.966 17.375c.212-.16.477-.196.878-.13l.575.094-.42-.843c-.38-.77-.458-.835-.803-.75-.208.052-.4.1-.4.12-.01.015-.23.36-.486.77-.333.535-.414.776-.284.857v.002c.276.172.604.13.94-.12zm15.91-45.715c.28-.17.074-1.01-.434-1.762-.688-1.02-.926-1.12-1.192-.5-.2.47-.19.49.654 1.404.47.51.908.898.97.858zm-44.393-45.908c2.162-.93 2.872-1.6 2.162-2.035-.216-.135-.547-.14-1.32-.022-.566.077-1.34.123-1.722.077-1.422-.164-2.736.5-2.535 1.285.065.258.264.41.717.542.556.16.616.23.556.548-.1.517.11.478 2.143-.396zm62.685-18.366c1.427-.52.313-.69-1.667-.25-1.04.23-1.19.306-1.32.672-.122.347-.104.41.112.41.28 0 1.836-.453 2.876-.832zm-50.433 2.656c-.273.123-1.147 1.356-1.147 1.62 0 .03.09.056.2.056.248 0 2.077-1.326 2.077-1.506 0-.22-.76-.335-1.13-.17zm60.296 2.67h.002c.5.03 1.097.063 1.326.083.588.04.518-.18-.152-.48-.46-.206-.64-.417-.936-1.106-.202-.468-.415-.905-.473-.973-.06-.066-.495-.01-.968.125-.94.268-.93.24-.465 1.332.316.744.667.96 1.666 1.02zm89.413-59.293l-3.74 1.333-13.56-3.1-4.94 3.41c-2.716 1.873-5.653 3.91-6.527 4.524-.873.614-1.72 1.117-1.878 1.117-.404 0-10.59-4.028-10.614-4.195-.01-.077-.13-1.506-.268-3.177l-.25-3.04-4.782-4.39-1.152.883c-.634.486-1.164.902-1.183.902-.02.01.117.71.303 1.55.174.843.263 1.602.174 1.69-.09.088-1.385.185-2.88.217l-2.72.056-2.128-2.238-2.128-2.24-.385-6.558c-.212-3.608-.415-6.587-.45-6.622-.036-.034-2.397-.597-5.248-1.25l-5.185-1.188-4.37 1.206-4.37 1.205-4.55 3.647c-2.5 2.005-4.724 3.736-4.937 3.847-.215.11-1.603.414-3.084.677l-2.694.476-.313 2.038c-.342 2.218-.24 3.628.355 4.927.26.57.5.798.835.798.63 0 2.506-1.642 4.177-3.66 1.187-1.432 1.6-1.765 3.105-2.502 1.208-.592 2.194-1.29 3.24-2.295 1.305-1.255 1.636-1.464 2.522-1.59.685-.1 1.02-.07 1.02.086 0 .73-1.434 2.956-2.4 3.726-.585.465-1.442 1.385-1.905 2.045-.767 1.092-.943 1.22-1.976 1.45-1.02.224-1.23.374-2.093 1.496-.526.686-1.058 1.603-1.18 2.04-.225.788-.226.79-2.024 1.144-.99.195-2.07.552-2.402.793-.42.305-.91.425-1.63.425-1.333-.015-1.885-.652-2.193-2.53-.12-.734-.295-1.402-.385-1.48-.092-.08-.58-.246-1.086-.366l-.92-.22-.446.878c-.246.482-.617 1.067-.826 1.3-.208.233-.487.756-.62 1.164-.27.83-.903 1.326-1.433 1.127-.33-.125-.35-.55-.073-1.54.056-.2-.134-.345-.56-.424-1-.183-.977-.922.06-1.99 1.033-1.063 1.227-1.533.747-1.797-.263-.145-.6-.033-1.277.425-.506.343-1.317.76-1.802.93-1.05.364-2.89 1.824-3.047 2.42-.092.343.04.46.712.64 1.072.283 1.34.96.61 1.536-1.8 1.42-2.063 1.78-2.22 3.042-.125 1.02-.282 1.365-.924 2.02-.426.433-.727.833-.668.89.058.06.454.01.88-.105.6-.162.97-.134 1.63.126.824.323.894.317 1.897-.178.8-.394 1.68-.575 3.78-.774l2.736-.26 1.48 1.08c1.776 1.293 2.18 1.264 2.18-.166.012-1.817.86-2.283 3.33-1.817.9.17 2.257.31 3.015.31.757 0 1.376.087 1.376.194 0 .107-.536.498-1.194.868-.656.37-1.405.992-1.663 1.384-.315.477-.843.86-1.604 1.167-1.362.546-1.64.9-2.224 2.83-.245.814-.49 1.548-.543 1.637-.053.086-.396.004-.763-.182-.612-.31-.725-.31-1.39 0-.4.19-1.186.34-1.75.34-.57 0-1.21.14-1.442.31-.532.396-1.15.41-1.297.027-.063-.164.075-.663.308-1.11l.424-.812-.89-.337c-.61-.23-1.01-.56-1.26-1.038-.513-.986-.717-1.05-1.91-.604-.58.216-1.382.394-1.78.394-1.297 0-1.167.47 1.017 3.697 1.433 2.117 2.087 3.29 2.246 4.027.124.572.193 1.073.15 1.115-.04.042-.622-.045-1.292-.192-1.544-.34-1.933-.84-1.724-2.21.146-.957.138-.973-1.3-2.59-1.847-2.075-2.092-2.09-3.108-.188-1.393 2.61-2.53 3.21-2.257 1.196.105-.78.057-1.087-.214-1.353-.407-.402-.25-.443-3.946 1.018-2.407.95-2.968 1.258-3.427 1.88-.302.408-1.057 1.06-1.677 1.45-.684.432-1.128.863-1.128 1.098-.002.632 2.437 3.397 3.36 3.808.654.292 1.048.735 1.898 2.128 1.05 1.72 2.11 2.658 3.006 2.658.587 0 1.36-1.095 1.936-2.747l.553-1.585 2.24-1.638c1.232-.9 2.363-1.63 2.513-1.63.334.008 1.025.505 1.025.736 0 .093-.397.687-.883 1.32-.555.724-.922 1.456-.995 1.98-.076.557-.298.975-.674 1.268-.475.37-.56.604-.56 1.525 0 .938-.058 1.087-.423 1.087-.31 0-.486-.224-.66-.833-.13-.458-.333-.86-.448-.902-.118-.038-.433.682-.703 1.6-.46 1.56-.47 1.71-.15 2.317.452.86.43 1.242-.086 1.514-.32.17-.587.143-1.075-.105-.477-.244-.757-.274-1.06-.113-.228.12-.51.217-.628.217s-.898-1.077-1.733-2.394c-1.36-2.142-1.628-2.445-2.556-2.873-.928-.428-1.142-.67-2.048-2.307-.863-1.563-1.17-1.922-2.1-2.463-.68-.394-1.17-.855-1.3-1.216-.116-.318-.3-.58-.41-.58-.553 0-2.306 1.107-2.894 1.827-.42.513-1.216 1.076-2.147 1.518-1.29.612-1.6.88-2.39 2.053-.595.884-1.537 1.845-2.724 2.78-1.53 1.205-1.855 1.57-2.073 2.338-.218.768-.758 1.376-3.47 3.91-2.476 2.31-3.356 3.28-3.836 4.214-.808 1.576-.855 2.967-.116 3.444.473.304.608.282 1.988-.328.813-.36 3.75-1.316 6.524-2.126 4.086-1.192 6.74-1.792 13.94-3.153l8.893-1.68 1.534-1.157c1.09-.824 2.205-1.41 3.88-2.043 1.753-.663 3.055-1.36 5.14-2.755 2.948-1.972 3.75-2.245 4.194-1.43.203.373.083.672-.798 2.003-.878 1.328-1.175 1.613-1.96 1.878-.506.172-1.317.62-1.8.996-.48.375-1.652.952-2.6 1.283-1.243.433-2.352 1.05-3.977 2.216-2.222 1.593-2.272 1.613-3.67 1.663-.777.027-2.574.35-3.99.72-2.107.546-3.114.688-5.523.766-1.663.054-3.393.23-3.972.403-.564.17-1.654.312-2.422.312-1.548.007-4.135.594-4.96 1.126-.295.19-1.352.493-2.35.675-3.23.587-9.246 3.19-9.55 4.133-.092.288.047.712.416 1.26.305.455.555.867.555.914 0 .048-.41.248-.912.445-1.903.746-2.164 1.658-.908 3.167.644.773.724.987.55 1.44-.17.44-.397.558-1.298.68-1.397.19-1.804.553-1.457 1.3.243.53.3.542 1.61.41 1.072-.108 1.488-.062 1.97.218.337.195.743.307.904.245.16-.062.705-.875 1.208-1.807.803-1.485 1.028-1.74 1.816-2.05.85-.333.915-.332 1.178.02.43.58.337.82-.474 1.202-.413.193-.752.43-.752.525 0 .51 5.237 2.16 6.854 2.16.36 0 1.13-.18 1.71-.395.71-.265 1.393-.36 2.095-.297.934.086 1.226-.006 2.834-.9 1.604-.89 1.827-.96 2.12-.673.19.177.266.42.19.54-.076.118-1.234.982-2.574 1.918-2.93 2.045-3.885 3.12-4.424 4.977-.498 1.714-.517 1.74-1.293 1.91-.467.1-.678.29-.768.702-.072.31-.14.63-.162.714-.02.083-.71 1.01-1.538 2.058l-1.503 1.908-2.215.73c-1.555.514-2.343.892-2.646 1.27-.545.687-1.472.746-1.472.097 0-.35-.08-.408-.375-.27-.207.095-.908.18-1.557.18-1.578.008-4.577 1.144-6.593 2.495-2.27 1.524-2.276 1.534-1.132 2.505.53.45 1.03.817 1.115.817.084 0 .388-.25.676-.555.42-.453.665-.536 1.237-.453.392.056 1.018-.024 1.39-.176.728-.3.947-.22.947.34 0 .207-.445.593-1.073.93-.59.316-1.073.616-1.073.667h.002c0 .17.348.097 1.61-.33.686-.232 1.57-.423 1.967-.423.538 0 1.336-.403 3.164-1.602 2.265-1.484 2.63-1.648 4.96-2.227 1.623-.404 3.253-.992 4.606-1.66 1.852-.914 2.274-1.235 3.66-2.78.86-.96 1.78-2.228 2.047-2.82.34-.758 1.136-1.71 2.7-3.23 2.23-2.17 2.377-2.472 1.282-2.62-.833-.114-.758-.543.176-1.012 1.005-.504 1.955-1.76 1.955-2.582 0-.632-.043-.61 2.405-1.13 1.508-.32 1.72-.43 2.406-1.255.94-1.128 2.157-1.433 3.096-.774.53.372.635.38 1.22.094.353-.172 1.076-.77 1.608-1.328.89-.934 1.135-1.06 3.113-1.593 2.474-.668 3-.98 4.09-2.446.937-1.254 3.442-7.554 3.127-7.863-.123-.12-.5-.098-.99.06-1.295.422-3.113-.182-3.113-1.033 0-.3.206-.413.912-.494.615-.07 1.67-.555 3.246-1.49 1.487-.882 3.257-1.706 4.873-2.27 2.386-.83 2.637-.974 4.213-2.408 1.953-1.778 3.617-2.922 5.862-4.03.886-.435 2.473-1.415 3.528-2.174 1.054-.76 2.794-1.803 3.864-2.317 2.54-1.22 5.154-3.174 8.624-6.444 2.395-2.256 2.942-2.67 3.688-2.794.635-.106 1.017-.055 1.392.187.478.307.616.3 1.79-.103.76-.26 1.645-.41 2.205-.368.908.067.968.03 1.986-1.168.804-.946 1.05-1.406 1.05-1.953 0-.572.124-.778.607-1.025.334-.17.867-.695 1.184-1.167.458-.68.71-.86 1.208-.86.366 0 .746.163.91.39.27.373.384.36 2.857-.33 2.262-.63 2.784-.702 4.277-.603 1.336.09 1.878.23 2.523.65.45.293.822.61.822.708 0 .097-1.04.157-2.308.157-2.798-.022-3.355.114-3.85.94-.267.442-.646.704-1.246.855-2.014.51-2.2.62-2.984 1.783-.473.7-1.093 1.308-1.586 1.556-.677.34-.916.653-1.45 1.914-.352.83-.862 1.715-1.132 1.968-.49.456-.5.456-1.944.09-1.4-.353-1.53-.352-3.588.046-1.174.227-2.614.623-3.2.882-.587.258-2.97 1.877-5.296 3.6-4.102 3.035-4.412 3.22-10.313 6.117-4.934 2.423-6.287 3.182-7.158 4.013-.607.58-2.19 1.638-3.65 2.438-1.417.777-2.645 1.52-2.73 1.65-.103.157.223.31.966.452.882.17 1.134.308 1.185.653.094.643-.306.862-2.405 1.323-2.527.554-2.9.975-3.655 4.118-.305 1.26-.5 2.376-.437 2.475.27.427 1.61.428 3.2 0 .915-.248 2.67-.5 3.943-.57 3.378-.18 3.638-.32 6.16-3.284 2.336-2.75 3.342-3.564 3.87-3.132.5.408.392.733-.874 2.604-.89 1.316-1.554 2.02-2.63 2.787-.792.565-1.875 1.47-2.407 2.01l-.967.985-2.79.49c-2.328.406-2.97.603-3.868 1.188-.59.386-1.896.976-2.898 1.312-1.78.597-3.217 1.28-3.217 1.53 0 .067.234.228.52.358.646.29 1.418.09 3.068-.79l1.22-.65.923.892c1.092 1.054 1.192 1.704.334 2.162-.585.32-.578.32.59.32.65.006 2.336-.087 3.748-.203 2.137-.175 2.62-.16 2.872.09.263.26.212.427-.373 1.228-.793 1.087-1.13 2.49-.6 2.49.183 0 .632-.247.997-.55.63-.523.692-.534 1.19-.213.86.555 1.864.428 2.927-.37 1.085-.818 2.23-1.03 3.517-.66.474.13 1.5.203 2.28.152 1.46-.098 2.338.15 2.338.665 0 .366-2.458 2.666-2.85 2.666-.167 0-.653.333-1.08.74-.424.406-.922.74-1.104.74-.183 0-.695.318-1.138.707-.745.655-1.056.753-4.093 1.29-1.81.32-3.32.55-3.356.507-.037-.04-.227-.62-.422-1.29-.327-1.12-.434-1.254-1.4-1.736l-1.05-.522-.555.72c-.672.863-.692 1.084-.13 1.38.57.3.547.77-.05 1.084-.528.278-4.14 1.236-4.69 1.236-.19.002-.526-.328-.748-.735-.336-.616-.525-.74-1.107-.74-.66 0-.703.043-.703.75 0 .703-.073.785-1.127 1.25l-1.127.497-.93-.528-.927-.528-1.11.44c-.61.24-1.45.502-1.863.58-.413.076-.822.245-.91.37-.314.462-.152 1.33.332 1.778l.494.458 2.643-.75c2.43-.688 2.673-.72 3.02-.41.208.184.435.682.505 1.105.114.693.035.866-.81 1.754-.514.54-1.086 1.268-1.266 1.615l-.33.63 1.17.565c.674.325 1.535.566 2.026.566.47 0 .854.084.854.193 0 .195-1.98 1.708-2.235 1.708-.076 0-1.105-.618-2.29-1.374-1.62-1.035-2.337-1.373-2.912-1.373-.648 0-.982-.21-2.224-1.388l-1.46-1.39-.854.428c-1.013.51-1.202.874-.766 1.484.498.702.188 1.576-.8 2.25-.468.32-.82.61-.78.65l-.107.597.003.004c-.287.052-.518.267-.796.73-.305.507-1.162 1.16-2.06 1.57-.847.385-2.832 1.692-4.41 2.903-2.882 2.21-3.42 2.427-4.962 2-.756-.21-.835-.16-.835.542 0 .628.284.916 1.518 1.53 1.47.734 1.647 1.007 1.543 2.392-.112 1.513-.367 1.864-1.92 2.637-1.99.988-2.356.997-2.356.05 0-.64-.59-1.145-.615-.523-.004.124-.137 1.53-.294 3.125-.348 3.515-.095 4.29 1.833 5.647.745.522 1.42 1.013 1.505 1.084.085.074-.248.45-.738.835-.885.695-.89.713-.526 2.26.258 1.1.725 1.945 1.575 2.853.665.71 1.21 1.43 1.21 1.603 0 .173.34.44.76.598.547.204.758.506.758 1.077 0 .928 1.03 2.677 2.12 3.61.88.75.66 1.12-.83 1.393-.83.153-.986.092-.986-.386 0-.84-3.8-6.67-4.842-7.427l-.898-.654-.207 1.81-.207 1.807-.828-.78c-.74-.7-.845-1.05-.99-3.334-.162-2.55-.536-3.506-1.14-2.91-.44.432.158 5.672.748 6.56.26.388.47 1.12.47 1.626 0 .505.28 1.456.62 2.112.34.657.536 1.324.437 1.483-.048.076-.026.145.045.197l.165.723c-.28.088-.758.572-1.06 1.077-.51.846-.592.88-1.08.446-.494-.44-.567-.35-1.1 1.383-.314 1.02-.58 2.534-.58 3.365-.01 1.496 0 1.51 1.007 1.607.835.08.99.2.863.673-.107.404.163.835.895 1.43.97.784 1.02.91.683 1.64-.453.98-1.486 1.046-2.727.175-.97-.68-.96-.69-1.004 1.193l-.032 1.322-1.518.43c-2.728.77-3.514.747-5.162-.152-1.81-.988-1.93-1.446-1.236-4.752.637-3.034.603-5.638-.093-7.135-.305-.656-1.395-2.467-2.422-4.024-1.025-1.557-1.866-3.132-1.866-3.5 0-.438-.387-.93-1.113-1.416-1.465-.98-2.006-.618-.68.453 1.012.817 1.02.843.427 1.29-.764.575-.588.58-4.53-.126-1.824-.326-3.428-.593-3.562-.593-.136 0-.54-.57-.9-1.27-.362-.7-1.31-2.043-2.11-2.988-.8-.945-1.88-2.45-2.4-3.347-1.038-1.786-1.607-2.094-3.654-1.99-1.697.088-2.422.86-2.422 2.61-.008 1.498-.55 2.01-1.956 1.85-.866-.1-1.103 0-1.37.578-.177.385-.324.967-.324 1.295 0 .327-.266 1.11-.59 1.736-.55 1.058-.562 1.256-.157 2.75.24.888.44 2.096.44 2.686.004 1.004.09 1.1 1.295 1.454.71.21 2.11.788 3.112 1.285 3.068 1.524 3.095 1.525 9.452.478l5.806-.958 1.48.59c1.183.474 1.626.862 2.21 1.938.91 1.673.723 2.568-.72 3.48-.586.37-1.19.672-1.34.672-.15 0-.653-1.076-1.12-2.39-.872-2.47-1.325-2.885-1.868-1.71-.172.373-.69 1.12-1.15 1.658-.695.814-.982.946-1.69.793-.742-.16-.92-.054-1.372.807-.285.545-.772 1.167-1.08 1.382-.67.463-.717 1.7-.108 2.747.24.41.444 1.304.444 1.983.023 2.57 6.133 11.773 7.48 11.264.22-.084.483-.4.58-.703.098-.302.776-.895 1.508-1.317 1.433-.827 2.705-.936 6.64-.57 2.21.205 2.72.606 2.07 1.63-.193.306-.352.896-.352 1.314 0 .8 1.963 4.906 2.543 5.32.19.136 1.823.166 3.632.07 2.41-.13 3.605-.335 4.467-.767 1.38-.695 2.586-.766 2.82-.166.09.235.03.91-.135 1.5-.34 1.213-.175 1.66.612 1.66 1.268 0 2.153-2.17 2.153-5.302 0-1.567.22-2.345 1.368-4.858.75-1.646 1.366-3.14 1.366-3.32 0-.928-2.057-2.797-4.084-3.71-2.29-1.034-3.81-2.217-3.81-2.968 0-.725 1.79-.57 3.188.277 1.14.69 3.188 1.03 3.188.527 0-.125-.28-.4-.62-.607-.78-.48-.5-.973.564-.973 3.38-.03 3.645-.108 5.063-1.478 1.427-1.378 1.61-2.01.538-1.857-.908.128-1.9-1.26-1.9-2.665 0-1.448.64-3.85 1.023-3.85.16 0 1.145.808 2.19 1.794 1.27 1.202 2.143 1.793 2.644 1.793.412 0 .92.202 1.126.448.208.248.527.45.71.45.182 0 1.682-1.022 3.332-2.27 3.006-2.273 4.527-3.11 5.647-3.11.926 0 1.016.47.343 1.77-.655 1.263-.847 2.886-.303 2.555.174-.106.668-.752 1.097-1.437.972-1.548 1.864-2.283 2.8-2.283.398-.004 1.376-.47 2.175-1.034.798-.564 2.03-1.316 2.736-1.67 1.25-.627 1.33-.63 2.9-.145 1.334.412 2.272.462 5.422.286l3.81-.214v.754c0 .854-.055.87-4.86 1.452-2.42.293-3.79.71-8.5 2.583-3.09 1.23-6.003 2.428-6.47 2.664-.505.254-1.667 1.65-2.833 3.402-1.09 1.635-2.095 2.972-2.234 2.972-.14 0-.775.706-1.41 1.57-1.863 2.53-2.034 2.557-2.67.4-.712-2.412-.664-2.63.51-2.412.83.153 1.182.02 2.18-.83 1.635-1.39 1.377-1.964-.852-1.9-.92.03-1.76.133-1.86.232-.1.1-.65.075-1.22-.05l-1.037-.23.182 1.31c.14 1.01.084 1.312-.243 1.312-.234 0-.935.27-1.56.598-.622.328-1.37.606-1.664.606-.403.006-.28.234.503.935.88.786.982 1.01.683 1.48-.665 1.046-.353 1.17.895.357 1.21-.79 1.262-.796 1.67-.247.233.313.42.795.42 1.072s.206.673.458.876c.793.648.512 1.45-.81 2.31-1.057.69-1.6.832-3.265.832-1.1.003-2.476.173-3.06.374-1.343.464-2.616 2.02-3.095 3.78-.364 1.34-.353 1.384.602 2.354 1.357 1.378 1.283 1.872-.258 1.732-.324-.03-.646.495-1.02 1.66-.54 1.68-.538 1.708.075 2.175.8.61 1.105 1.875.717 2.972-.246.687-.207.966.183 1.35l.005.002c.27.266.71.484.977.484.702 0 1.888-1.404 2.717-3.213.396-.862.83-1.568.962-1.568.133 0 .54.397.905.882.55.735.76.83 1.254.57.325-.176.865-.24 1.198-.156.334.085.944.004 1.357-.18.535-.24.99-.245 1.597-.02.766.284.97.203 2.117-.84.786-.714 1.566-1.153 2.047-1.153.43 0 1.292-.4 1.918-.888 1.463-1.14 2.46-1.503 4.13-1.503.256 0 .452-.004.62-.014v.002l.015-.003c.222-.014.38-.042.485-.096l1.198-.237c.295.696.713 1.35 1.315 2.074 1.366 1.64 1.694 1.82 3.15 1.715 1.918-.136 2.425.212 1.65 1.133-.75.888-3.702.44-5.034-.767l-.966-.874-.935-1.02c-.068-.224-.575-.26-1.524-.12-1.125.17-1.65.46-2.53 1.403-.85.91-1.422 1.237-2.44 1.397-1.005.156-1.787.596-3.19 1.793-1.02.872-2.094 1.67-2.387 1.773-.292.104-.532.47-.532.812 0 .453-.375.79-1.368 1.22-.754.33-1.488.525-1.636.436-.146-.088-.446.053-.667.315-.222.262-.716.594-1.098.737-.382.143-.696.465-.696.716 0 .3-.292.455-.864.455-.478 0-1.11.267-1.413.598-.345.375-.936.6-1.582.6-.874 0-1.08-.14-1.35-.898-.174-.493-.43-.896-.567-.896-.136 0-.337.403-.45.896-.15.68-.368.897-.896.897-.892 0-1.434-.65-1.658-1.987l-.176-1.058-.783.606c-.827.643-1.97 2.667-2.233 3.954-.086.422-.645 1.263-1.24 1.868l-1.087 1.1 1.12 1.12c1.412 1.415 2.247 2.733 2.248 3.55 0 .35.34 1.39.757 2.315.564 1.257.65 1.68.34 1.68-.228 0-.576-.192-.777-.43-.2-.236-.66-.47-1.024-.522-.465-.065-.668-.313-.693-.84-.022-.41-.052-.84-.077-.952-.024-.113-.966.166-2.093.62-2.028.817-2.05.84-2.234 2.148-.327 2.35-1.173 4.003-2.52 4.92-.684.464-1.615 1.272-2.072 1.796l-.828.952-.848.663c-.124.032-.275.083-.468.155-1.01.375-1.856 2.075-1.856 3.734 0 1.115-1.483 4.935-2.582 6.65-.804 1.253-1.62 1.52-2.277.742-.57-.68-.2-1.91 2-6.64 1.312-2.815 1.924-4.472 1.8-4.862-.145-.445.18-.958 1.31-2.07 1.29-1.27 4.51-5.93 4.244-6.145-.05-.04-1.696-.91-3.658-1.932-1.963-1.023-3.56-1.948-3.56-2.06.007-.11 1.526-1.34 3.377-2.74 2.505-1.89 3.805-2.66 5.077-3.012 1.88-.52 1.803-.402 2.518-3.86.373-1.8.432-5.902.09-6.238-.082-.08-.59.272-1.13.784-.54.512-1.35 1.02-1.796 1.127-1.332.323-1.263.942.218 1.945 1.477 1 1.54 1.122.97 1.89-.355.478-.482.482-1.72.052-.734-.254-1.518-.613-1.74-.795-.594-.485-.522-3.41.11-4.46.28-.474.422-.95.31-1.063-.115-.112-.928-.014-1.808.217l-1.6.42-.163 1.404c-.092.773-.248 1.486-.352 1.59-.103.1-.603-.03-1.11-.288-1.26-.64-1.835-.597-4.217.324-2.497.966-2.792 1.182-3.32 2.426-.354.833-.502.932-.996.672-.32-.168-1.136-.305-1.815-.305-.704 0-1.235-.144-1.235-.332 0-.182.565-.995 1.254-1.806.9-1.057 1.406-2.043 1.792-3.48l.537-2.002-.73-.764c-.85-.888-.887-1.206-.288-2.347.42-.8.39-.91-.683-2.367-.752-1.02-1.48-1.645-2.19-1.88-.583-.194-1.487-.67-2.008-1.06-1.414-1.056-3.456-4.072-3.456-5.104 0-.65-.2-.967-.773-1.224-.426-.19-.818-.346-.872-.346-.05 0-.17.557-.264 1.238-.094.68-.35 1.36-.572 1.505-.326.215-2.626.098-2.875-.146-.037-.036.124-1.052.358-2.258.402-2.083.392-2.256-.21-3.434-.2-.388-.386-.738-.524-.99l-.242-.946-.13-1.086c-.187-1.558.58-3.835 1.593-4.726.412-.362.694-.712.623-.78-.068-.07-.87-.187-1.778-.262-1.483-.123-1.71-.2-2.184-.756-.29-.34-.53-.74-.53-.892 0-.292-1.518-1.75-2.38-2.285-.284-.177-.99-.39-1.564-.467-1.504-.21-1.64-.293-1.64-1.032 0-.722-1.148-2.884-1.53-2.884-.128 0-.585-.37-1.014-.825-.57-.6-1.018-.86-1.658-.963l-.877-.14-.572 1.255c-.314.69-.57 1.416-.57 1.613 0 .197-.315.92-.7 1.61-.61 1.093-.778 1.253-1.34 1.253-.582.004-.723.154-1.443 1.526-.743 1.414-.774 1.547-.45 1.9.192.208.605.378.92.378.864 0 1.53.873 2.895 3.804.677 1.452 1.705 3.248 2.285 3.99 1.378 1.767 1.367 2.132-.13 4.233-.736 1.035-1.18 1.878-1.18 2.24 0 .327.33 1.033.756 1.618.794 1.086 1.155 2.56.767 3.128-.177.26-.36.2-1.136-.373-1.08-.8-4.953-2.79-5.43-2.79-.58 0-.322.51.64 1.268.518.407.95.883.95 1.057.004.174-.376.584-.844.91l-.852.593-.754-.565c-.414-.312-.752-.485-.75-.382 0 .1.388 2.222.86 4.714l.86 4.53-.69.7c-.378.385-.794.7-.925.7-.416 0-.75-1.328-.617-2.443.114-.945.015-1.323-.875-3.375-.552-1.27-.96-2.472-.908-2.67.127-.477-.892-.887-1.915-.77-.662.077-.847 0-1.235-.517-.693-.922-2.413-1.776-4.22-2.096-2.294-.406-2.577-.334-2.577.66 0 1.157-.475 1.48-1.298.882l-.635-.463v1.54c-.003 1.682-.074 1.877-.825 2.266-.366.193-.57.2-.74.034-.336-.33-.537-.286-.627.14-.046.212.312.816.843 1.422.81.922.924 1.177.924 2.06 0 .946-.034 1.007-.566 1.007h-.565l.122 1.53c.1 1.262.042 1.73-.332 2.643l-.455 1.11h-1.134c-1.312 0-1.578-.283-1.578-1.677 0-.775-.15-1.012-1.53-2.444-.842-.872-1.69-1.585-1.886-1.585-.568 0-1.086 1.11-1.11 2.357-.008.62-.136 1.462-.285 1.87-.234.642-.47.82-1.797 1.356-1.474.595-1.547.66-2.05 1.796-.515 1.168-.516 1.185-.113 1.748.225.313.623.635.885.713 2.518.766 2.638.855 3.376 2.52.41.928.86 1.626 1.09 1.698.516.16 2.16-.282 2.444-.66.123-.162.658-.42 1.19-.57 1.11-.312 1.29-.76.847-2.086-.22-.64-.22-.86 0-1.12.49-.58.8-.347 1.286.968l.48 1.294 1.493-.146c.913-.09 2.03-.382 2.875-.755 1.273-.56 1.4-.58 1.58-.245.125.227.113.725-.024 1.32-.203.875-.166 1.063.45 2.26.824 1.607.862 2.298.144 2.62-.412.185-.54.422-.59 1.09-.06.805-.117.868-1.03 1.16-.532.172-1 .338-1.042.373-.04.035.04.413.186.84.347 1.035 1.333 1.875 2.84 2.42 1.36.49 1.665.86 1.665 2.02 0 .588.24 1.114.98 2.134.8 1.104.958 1.466.85 1.954-.12.537-.245.613-1.225.726-1.657.193-2.32-.315-1.528-1.174.345-.378.336-.422-.19-.863-.306-.255-.778-.868-1.05-1.362-.27-.494-.557-.898-.634-.898-.076 0-.684.376-1.35.835-.78.538-1.5.856-2.02.898-.785.06-.827.027-1.513-1.205-.594-1.065-.688-1.42-.594-2.22.085-.725.01-1.1-.315-1.584-.545-.803-.543-1.256 0-2.122l.435-.692-.752-.784c-.7-.73-.814-.776-1.668-.653-.585.082-1.507-.01-2.542-.255-1.553-.374-1.663-.375-2.51-.02-1.63.68-1.856.46-4.216-4.05-1.77-3.38-2.193-4.037-2.945-4.55-.484-.33-1.2-1.092-1.59-1.695-.843-1.294-.91-1.344-1.62-1.21-.48.09-.67.43-1.58 2.832-.568 1.502-1.042 2.73-1.062 2.73-.016 0-.537-.19-1.158-.422-1.238-.463-1.92-.524-2.414-.215-.26.163.02.54 1.462 1.968l1.784 1.766 1.14-.09c1.242-.102 1.385-.006 1.617 1.098.128.598.21.652 1.008.652 1.664 0 2.05.923.827 1.98-.953.83-.955 1.33 0 1.778.84.394 1.832 2.053 1.832 3.064 0 .48-.152.673-.76.958-.416.195-.79.356-.83.356-.042 0-.194-.287-.343-.638-.148-.35-.637-.924-1.087-1.275-.457-.357-1.51-1.72-2.388-3.093-1.412-2.208-1.714-2.547-2.99-3.354-.787-.498-1.63-1.234-1.893-1.654-.262-.416-.782-.963-1.158-1.216-.376-.252-1.035-.786-1.464-1.185l-.78-.724-.376.97c-.207.534-.46.97-.56.97-.113 0-.167.034-.156.113l-1.032.76c-.073.036-.153.1-.235.173l-.062.046.002.006c-.24.24-.513.62-.847 1.2-.678 1.18-.775 1.278-2.105 2.177-.652.44-1.29.943-1.417 1.118-.225.31-.226.342-.024 1.166.28 1.148.57 1.538 1.51 2.036 1.085.576 1.158.654 1.2 1.282.02.302.102.57.183.597.08.027.51-.325.955-.782.946-.976 1.7-1.39 3.78-2.072 2.025-.663 2.57-.662 3.858.013 1.736.91 1.984 1.346 1.458 2.574-.13.306-.24.595-.24.644 0 .093.56.03 2.04-.228 1.044-.183 1.3-.125 1.3.29 0 .338.3.546.784.546.584 0 1.09.433 1.504 1.29.213.438.6 1.104.86 1.478.76 1.098.62 1.624-.552 2.054-.465.17-.568.26-.568.498 0 .34.197.444 1.35.7 1.074.24 1.63.22 2.706-.104l.895-.27 1.013.507c1.62.81 2.235 1.51 1.647 1.875-.15.094-.757.262-1.345.376-1.7.327-2.576.89-3.83 2.46-.686.862-1.17 1.128-1.897 1.044-.31-.035-.373-.11-.518-.627-.136-.485-.33-.742-1.12-1.49-.524-.498-1.452-1.473-2.062-2.168-.624-.712-1.292-1.35-1.528-1.463-.23-.11-1.107-.304-1.95-.43-1.826-.277-2.137-.38-3.76-1.247-.687-.367-1.278-.667-1.31-.667-.035 0-.1 1-.148 2.22-.085 2.21-.085 2.223.19 2.52.152.162 1.266 1.135 2.477 2.16 2.28 1.934 5.373 4.87 5.373 5.1 0 .074-.11.275-.247.448-.368.468-.782.41-1.737-.248-.45-.31-1.33-.835-1.952-1.17-1.02-.544-1.172-.67-1.512-1.255-.636-1.09-.833-1.282-1.565-1.507-.554-.17-.802-.34-1.337-.92-1.89-2.043-2.378-2.417-3.326-2.54-.32-.043-.536.015-.847.225-.78.53-.62.86.827 1.695 1.596.92 2.69 2.087 2.61 2.782-.035.294-.085.33-.456.317-.263-.01-.75-.213-1.312-.547-.492-.293-1.378-.746-1.968-1.007-1-.44-1.925-.986-2.717-1.6l-.33-.258.072.52c.22 1.594.3 1.813.876 2.368.305.295.89.82 1.298 1.17 1.134.967.957 1.468-.662 1.865-.445.11-.882.243-.97.3-.233.142-.1.537.477 1.414.556.845.55.593.055 2.98-.342 1.652-.388 2.41-.146 2.41.085 0 .41-.086.72-.192.605-.206.97-.183 1.626.103.387.17.502.16 1.61-.108 1.994-.484 2.284-.31 1.604.965-.313.587-.352.746-.243.986.07.157.13.39.13.522 0 .38-.57 1.397-.827 1.48-.36.113-1.668-.162-2.323-.49-.323-.162-.775-.46-1.005-.66-.503-.442-1.046-.688-1.35-.608-.12.03-.22.09-.22.128 0 .04.19.513.422 1.054.764 1.78.82 3.274.126 3.448-.397.1-1.194-.144-1.606-.49-.288-.243-.377-.444-.485-1.1l-.308-1.877c-.2-1.224-.348-1.414-1.007-1.3-.628.11-1.452.495-1.84.86-.58.543-.657.877-.59 2.527.062 1.466.057 1.498-.247 1.902-.498.658-.453.71.763.883.144.02.172.182.14.8-.037.768-.03.787.522 1.49.595.756 1.247 1.993 1.247 2.367 0 .203-.072.22-.705.16l-.704-.062 1.11 2.51 11.265 7.12c6.195 3.916 11.317 7.204 11.382 7.307.082.13-.07 1.267-.51 3.807-.344 1.992-.654 3.742-.688 3.888-.06.245-.038.257.276.153.188-.062 4.232-1.24 8.988-2.622 3.846-1.116 6.11-1.78 8.188-2.44l.747 1.278c.092.344 1.58 4.39 3.303 8.993l3.134 8.368 4.84.955c2.66.525 4.873.97 4.914.97.043.01.08.833.08 1.828h-.003c0 1.167.11 1.744.313 1.62.17-.104 5.215-3.594 11.208-7.756l10.895-7.567 5.72 1.026c6.62 1.19 7.173 1.213 11.033.472l2.884-.555.778-2.95c.428-1.62.914-2.992 1.08-3.047.166-.054.536.383.82.972.43.88.635 1.038 1.198.88 2.71-.767 11.34-3.626 11.473-3.802.09-.12.477-1.49.857-3.042l.69-2.82 19.668-12.832-.344-.052.645-.407c.167.024 3.515-1.127 7.44-2.558l7.135-2.602 5.37-4.5c2.952-2.475 5.38-4.568 5.38-4.65l.868-.564.117-.294c1.334-.85 5.232-3.445 9.756-6.5 7.768-5.246 10.18-6.683 10.463-6.235.203.32.89 2.057 1.53 3.858.638 1.802 1.307 3.276 1.485 3.276.178 0 4.394-1.98 9.368-4.402 4.974-2.42 9.232-4.465 9.46-4.544.406-.137 3.89-10.71 4-12.132.03-.39-1.264-3.808-2.877-7.598l-2.933-6.89.598-8.01-3.03-1.353c-1.67-.743-3.034-1.536-3.035-1.762 0-.226 1.785-3.012 3.97-6.192l3.972-5.782 3.113-1.358c1.712-.747 3.113-1.417 3.113-1.487 0-.072-1.096-1.714-2.435-3.65-1.34-1.937-2.464-3.566-2.5-3.62-.034-.056-1.4.263-3.032.71-1.633.445-2.995.776-3.03.733-.032-.042-2.526-7.113-5.544-15.714-3.016-8.602-5.697-16.232-5.958-16.957l-.473-1.318-.064.048-.286-.637c8.754-6.71 16.665-12.917 16.863-13.264.108-.19 1.037-3.302 2.066-6.918 1.03-3.616 2.063-7.22 2.297-8.006l.426-1.432-2.72-1.706c-1.494-.94-2.718-1.863-2.72-2.056 0-.192.48-.64 1.063-.996.583-.355 1.06-.746 1.06-.87l.722-.282 4.83-2.072 3.365-12.855c1.85-7.072 3.82-14.592 4.38-16.713.556-2.12 1.095-3.857 1.2-3.857.1 0 2.416 1.465 5.143 3.255l4.958 3.255 11.066-9.296 3.456-6.573c1.902-3.614 3.437-6.592 3.41-6.612-.026-.022-1.73.56-3.787 1.293zm-119.098 55.598c1.746-.015 2.88-.35 3.017-.897.123-.484-.143-1.057-.45-.97-.133.037-.622.112-1.09.166-.955.11-2.76 1.037-2.842 1.46-.044.222.112.242 1.365.242zm-31.57 8.342c.788-.53.826-.59.515-.844-.162-.132-.456-.054-1.302.345l-1.093.516.43.23c.586.312.627.305 1.45-.246zm-7.612 13.338c.135 0 1.693-2.404 1.61-2.485-.033-.035-.28.03-.548.14-.31.128-.708.528-1.086 1.086-.546.806-.576.9-.342 1.07v.002c.142.104.306.186.365.186zm8.65-17.816c-.134.455-.133.456.726.674 1.325.337 2.212.064 4.065-1.253 1.766-1.255 1.995-1.524 2.117-2.49.057-.444.044-.864-.03-.933-.073-.07-1.08.12-2.237.425l-2.104.55-.324.618c-.257.49-.942 1.135-2.038 1.922-.023.017-.1.236-.176.487zm-2.155-13.197c-1.096.082-1.33.063-1.372-.12-.03-.13-1.41 1.234-3.39 3.355-1.838 1.966-3.342 3.607-3.342 3.65 0 .04.206.205.456.37.543.352.372.34 1.114.082.44-.153 1.724-1.204 4.417-3.615 4.354-3.9 4.35-3.894 2.118-3.722zm18.88-29.547c-.137.64-.128.668.33.94.258.154.606.324.773.378.168.054.473.112.676.112.49.02 2.606-1.356 3.32-2.158.508-.57 1.042-1.806 1.333-3.09.126-.558-.375-1.21-1.102-1.43l-.575-.174-1.22 1.247c-1.008 1.032-1.32 1.265-1.824 1.35-1.478.252-1.72.366-1.897.902-.142.423-.13.577.08.888.2.303.22.504.106 1.035zm9.07-9.414h-.002c.518.343.612.316.612-.18 0-.237.04-.623.085-.86.07-.36.013-.47-.362-.674l-.445-.245-.17.83c-.09.457-.15.835-.13.855l.413.274zm6.176.336c-.847.91-.974 1.108-.71 1.108.497 0 1.162-.396 1.59-.947.377-.487.505-1.055.27-1.197-.065-.04-.582.427-1.15 1.037zm-55.61 1.015l.103.402.628-.36c.345-.196 1.36-.742 2.26-1.21.895-.47 1.676-.927 1.73-1.017.068-.11.006-.124-.19-.047-.715.284-1.123.368-2.204.458-1.11.093-1.18.123-1.792.736-.535.535-.62.703-.535 1.04zm-37.33 11.54c.57-.14 2.006-1.382 2.183-1.887.126-.353.096-.434-.22-.6-.266-.143-.456-.15-.713-.035-.42.188-1.415 1.585-1.564 2.192-.1.412-.087.428.315.33zm16.71-13.85c.387.222.47.205 1.198-.248 1.246-.776.976-.917-.74-.386-.772.24-.882.392-.457.636zm19.142 1.358c.038 0 .354-.178.703-.396.48-.3.73-.61 1.027-1.27.356-.787.37-.888.147-1.01-.354-.196-2.12.487-2.68 1.036l-.452.44.595.6h-.002c.327.33.625.6.66.6zm-1.378-8.087v.002c.507.37.416.366 1.39.08 1.238-.36 2.213-1.025 2.74-1.867.905-1.448.587-1.86-1.55-2.015-1.434-.104-1.48-.098-1.48.205 0 .184.25.508.607.792.335.264.608.56.608.663 0 .247-.673.664-1.07.664-.325 0-1.663.85-1.663 1.058 0 .06.188.25.418.418zm-23.04 3.577c.85-1.147.966-1.617.4-1.617-.432 0-.45.02-1.437 1.68-.426.72-.714 1.31-.635 1.31.436 0 .998-.462 1.673-1.373zm8.35 4.84c0 .048-.87.712-1.934 1.477-2.525 1.812-3.783 2.898-3.87 3.336-.062.325.02.378 1.01.655.592.166 1.126.315 1.188.315.062.007.575-.278 1.14-.634.563-.355 1.61-.864 2.327-1.13l1.3-.483.55.318.55.32 1.086-.387c.97-.344 1.634-.823 1.658-1.18.003-.067-.302-.478-.677-.91-.58-.67-.684-.885-.684-1.435 0-.54.103-.767.63-1.38.497-.583.585-.763.417-.868-.29-.18-.32-.175-1.137.17-.806.34-1.418.287-2.013-.172-.358-.275-.36-.275-1.255.493l-.9.768.308.32c.17.178.306.36.306.41zm-9.087 7.958h.002zm-2.248-4.288c.415.255 1.03.91 1.675 1.783l1.02 1.38-.445 1.126c-.52 1.316-.33 1.514.533.567.78-.853.908-1.173 1.194-2.95.145-.905.35-1.778.457-1.944.107-.164.917-1.135 1.8-2.158 1.68-1.942 1.733-2.098.738-2.098-.27-.002-.494-.078-.494-.172 0-.093.172-.635.38-1.204.613-1.67.623-1.66-1.024-1.14-.993.313-1.503.56-1.74.843-.516.614-.447.88.26.998.332.057.642.16.688.233.045.072-.086.394-.293.716-.34.53-.5.62-1.744.997-1.03.31-1.654.616-2.515 1.23-1.355.97-1.424 1.22-.488 1.795zm-4.166-2.517c.568-.34 2.597-1.906 2.597-2.005 0-.034-.082-.238-.18-.455-.157-.337-.25-.38-.646-.302-.255.05-.714.13-1.023.18-.583.09-.86.434-.583.706.284.278.165.706-.374 1.354-.292.35-.53.68-.53.735h-.003c0 .165.21.105.743-.215zm37.16-6.915c.583.337.964.425 2.164.506v.006c2.34.158 2.437.155 2.902-.08.712-.363.796-.672.51-1.826-.345-1.38-1.64-3.75-2.165-3.958-.748-.303-1.877-.31-2.445-.02-.762.39-.927.802-.637 1.598l.236.643-.635.99c-.84 1.31-.83 1.62.072 2.14zm69.028-37.804c.796-.452 1.598-.822 1.784-.822.345 0 1.192-.766 1.356-1.227.06-.175-.052-.356-.358-.57l-.45-.315-1.934 1.455c-2.073 1.557-2.16 1.64-2.16 2.04-.005.395.19.332 1.762-.56zm-4.744 24.096c-.088.576-.067.634.223.634.176 0 .702-.185 1.17-.41.778-.376 1-.613 2.667-2.86 1-1.346 1.853-2.624 1.895-2.84.068-.342-.055-.49-.983-1.182-1.05-.782-1.067-.787-1.565-.58-.995.418-3.77 3.054-3.77 3.583 0 .067.326.087.723.067.695-.035.722-.02.77.406.035.29-.136.81-.49 1.495-.298.578-.586 1.337-.64 1.687zm-13.75-1.372l1.72.886-.08.523c-.06.41 0 .61.29.936.2.228.522.477.713.55h-.002c.584.23 1.07.174 2.442-.282 2.107-.7 2.79-1.28 4.31-3.66l1.293-2.023 3.024-2.43c1.72-1.382 3.737-2.853 4.676-3.408 1.25-.74 1.826-1.188 2.373-1.85.483-.584.96-.977 1.44-1.19.48-.21.953-.6 1.425-1.173.388-.472 1.523-1.535 2.52-2.362 1-.828 1.817-1.524 1.817-1.547 0-.02.132-.768.296-1.658.213-1.142.253-1.7.146-1.897-.183-.335-.137-.36-1.946 1.054-1.388 1.084-2.16 1.486-2.854 1.506-.398.008-.605.338-.743 1.19-.085.532-.186.667-.687.92-.536.267-.627.274-1.025.07-.364-.184-.48-.392-.69-1.236-.22-.882-.325-1.06-.814-1.382-.504-.325-.695-.362-1.853-.325-1 .032-1.43-.022-1.924-.24-.512-.226-.827-.26-1.624-.18-.868.09-1.115.192-2.022.843-1.875 1.346-3.407 2.128-4.613 2.354-1.036.197-1.148.19-1.684-.078-.465-.234-.692-.263-1.188-.152-1.017.224-1.628.795-1.906 1.777-.132.47-.26.923-.29 1.003-.024.082.092.373.26.647.264.436.277.543.1.87-.114.207-.39.506-.62.667-.368.257-.493.272-1.117.116l-.704-.174-.748.725c-.41.4-.748.82-.748.933 0 .114.233.587.517 1.052.388.632.564 1.152.702 2.07.183 1.21.18 1.238-.214 1.898-.246.414-.433 1.005-.492 1.55-.088.833-.128.9-.754 1.315-.364.24-.66.47-.662.51-.003.225.383.48 1.94 1.282zm26.19-.3c-.44.684-.802 1.28-.806 1.338.002.052.118.06.263.02.147-.04 1.324-.263 2.616-.494l2.35-.42 9.383-7.526 8.34-12.496-.8-4.262c-.44-2.344-.82-4.29-.845-4.318-.022-.032-.663.398-1.423.954-1.89 1.386-1.98 1.584-2.436 5.355l-.356 2.968-1.642 1.267c-1.586 1.226-1.662 1.265-2.246 1.167-.33-.054-.602-.177-.602-.274 0-.095.204-.913.454-1.817.25-.903.413-1.77.363-1.92-.145-.452-1.48.945-1.895 1.983-.184.46-.622 1.137-.975 1.507-.96 1.005-3.502 5.817-3.615 6.843-.082.738-.245.995-2.508 3.96-2.14 2.804-2.442 3.27-2.614 4.04-.127.567-.48 1.313-1.003 2.126z" />
-              
+
             </g>
             <g class="new-municipality" id="new-Indre-Namdal">
               <path d="M1880.914 2198.39c-.268-1.86-.692-6.425-.942-10.144-1.348-20.093-1.997-25.994-3.785-34.446-.712-3.37-2.083-10.11-3.045-14.98-.963-4.866-2.024-9.24-2.358-9.72-.335-.478-1.347-1.667-2.25-2.64-1.577-1.7-1.89-1.83-7.87-3.31-3.423-.85-9.18-2.384-12.793-3.41-3.61-1.026-6.85-1.865-7.197-1.865-.348 0-2.064-1.094-3.815-2.43-4.935-3.768-6.943-5.178-7.376-5.178-.217 0-1.442-.678-2.72-1.507-1.28-.83-4.077-2.446-6.218-3.592-5.812-3.114-6.028-3.325-5.93-5.75.047-1.123.308-2.992.583-4.155.725-3.085 3.773-12.117 4.42-13.102 1.077-1.635 12.636-26.28 15.265-32.542 1.464-3.487 3.613-8.587 4.776-11.333 1.163-2.746 2.115-5.05 2.115-5.12l.78-1.673c.104-.127.16-.248.222-.387 1.94-4.397 4.893-11.8 5.844-14.655 1.98-5.954 12.022-27.5 26.53-56.932 4.473-9.078 5.225-10.793 4.805-10.975-.274-.118-4.496-1.038-9.383-2.043l-8.89-1.83-11.378 5.633-3.043-.71-3.042-.71-18.212 3.903c-10.016 2.147-19.92 4.308-22.01 4.803l-3.8.9-1.627-.084c-.3-.12-2.72-.624-5.375-1.117l-4.825-.896-12.385 5.36h-38.74l-2.988 9.666-3.182.867c-1.75.476-3.223.903-3.268.95-.047.045-.715 2.222-1.484 4.836-.77 2.614-1.51 4.872-1.64 5.012-.134.143-1.612.547-3.283.9l-3.04.638 4.765 7.342-.757 2.217c-.465 1.36-.954 2.273-1.266 2.364-.28.08-3.788.768-7.795 1.528-4.01.76-7.937 1.516-8.73 1.683l-1.443.303v4.44c0 2.443-.103 4.503-.227 4.577-.125.075-1.562-.374-3.194-.997l-2.965-1.134-.914.25c-.244.023-2.334.73-4.645 1.57-2.31.838-4.36 1.518-4.557 1.518-.194-.005-1.72-2.56-3.39-5.68-1.668-3.117-3.102-5.662-3.187-5.662-.084.003-1.673 2.928-3.53 6.5l-3.377 6.493-3.76 3.23c-2.066 1.778-4.69 3.985-5.824 4.905l-2.067 1.674-9.91-6.58-3.88 14.823c-2.134 8.153-4.085 15.61-4.336 16.576l-.455 1.752-2.61 1.178c-1.437.648-3.13 1.53-3.766 1.96l-1.156.782 2.77 1.772c1.696 1.086 2.71 1.92 2.618 2.156-.082.212-1.2 4.064-2.485 8.562l-2.335 8.177-8.273 6.426c-7.9 6.134-8.26 6.46-7.985 7.172.158.41 2.816 7.942 5.907 16.736 3.09 8.794 5.675 16.04 5.738 16.11.066.065 1.413-.225 2.993-.645l2.874-.76.514.792c.283.437 1.4 2.054 2.485 3.594h.003l1.97 2.8.918 1.214-6.803 3.044-7.933 11.37 6.1 2.65-.6 8.31 6.114 14.4-1.733 5.65c-.953 3.108-1.733 5.757-1.733 5.89 0 .132.117.24.263.24.673 0 23.58-6.823 23.81-7.092.142-.168 2.34-2.834 4.883-5.925l4.626-5.62 1.137.72c.626.398 1.758 1.133 2.516 1.634 1.364.9 1.438.903 6.864.285l5.487-.625 16.328-9.89 44.43-7.088.534.112 8.18 21.554 11.81 10.26 1.322 4.745c.728 2.61 1.75 6.328 2.274 8.26l.95 3.515-1.164 21c-.64 11.55-1.15 21.308-1.15 21.685.01.5.567.75 2.054.92 2.645.304 5.327.738 21.364 3.458 7.32 1.243 19.88 3.33 27.91 4.64 8.03 1.31 20.205 3.314 27.054 4.454 6.848 1.14 12.935 2.15 13.526 2.248 2.75.45 3.32.32 3.775-.87 1.053-2.76 3.588-10.89 4.19-13.443 1.153-4.898 2.79-9.52 5.973-16.883 6.396-14.79 6.416-14.866 5.45-21.556"/>
@@ -2401,7 +2399,7 @@
           <text id="Fusa">
             <tspan x="143.257" y="3162.804">Fusa</tspan>
           </text>
-          
+
           <text id="Odda">
             <tspan x="273.172" y="3244.006">Odda</tspan>
           </text>
