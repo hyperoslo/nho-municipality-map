@@ -59,7 +59,7 @@ gulp.task('server', function(cb) {
    var spawn = require('child_process').spawn;
    var log = function(data){ console.log("[Divshot] " + data.toString().trim()); }
 
-   var server = spawn('divshot', ['server', '--port', '3000']);
+   var server = spawn('divshot', ['server', '--port', '3000', '--host', '0.0.0.0']);
 
    server.on('error', function(error) { console.log(error.stack) });
    server.stdout.on('data', log);
