@@ -207,8 +207,13 @@ $(document).ready(function() {
     window.scaleMap($(this).val(), 200);
   });
 
-  $('#municipalities-map').bind('mousewheel', function(e) {
-    var delta = (e.originalEvent.wheelDelta / 120)
+  $('#municipalities-map').bind('mousewheel DOMMouseScroll', function(e) {
+    if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+      var delta = (e.originalEvent.detail / 120)
+    } else {
+      var delta = (e.originalEvent.wheelDelta / 120)
+    };
+    
     if( delta > 0) {
       zoomInn(1.1, 1);
     } else {
