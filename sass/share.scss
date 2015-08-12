@@ -6,6 +6,12 @@
   width: 56px;
   height: 208px;
   background-color: white;
+  pointer-events: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   a.nho-facebook {
     @include retina-image('../images/facebook', 34px 35px, 'png', '../images/facebook@2x', 'png');
   }
@@ -19,6 +25,7 @@
     @include retina-image('../images/embed', 34px 35px, 'png', '../images/embed@2x', 'png');
   }
   a {
+    pointer-events: all;
     display: inline-block;
     margin: 9px 11px 5px;
     width: 34px;
