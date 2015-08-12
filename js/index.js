@@ -177,7 +177,7 @@ $(document).ready(function() {
   }
 
   $('#zoom').on('input', function() {
-    window.scaleMap($(this).val());
+    window.scaleMap($(this).val(), 200);
   });
 
   $('#municipalities-map').bind('mousewheel', function(e) {

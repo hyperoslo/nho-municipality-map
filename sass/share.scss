@@ -1,25 +1,22 @@
 .nho-share {
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
+  position: absolute !important;
+  z-index: 19;
+  right: 20px;
+  bottom: 20px;
   width: 56px;
   height: 208px;
   background-color: white;
   a.nho-facebook {
     @include retina-image('../images/facebook', 34px 35px, 'png', '../images/facebook@2x', 'png');
-    background-color: white;
   }
   a.nho-twitter {
     @include retina-image('../images/twitter', 34px 35px, 'png', '../images/twitter@2x', 'png');
-    background-color: white;
   }
   a.nho-linkedin {
     @include retina-image('../images/linkedin', 34px 35px, 'png', '../images/linkedin@2x', 'png');
-    background-color: white;
   }
   a.nho-embed {
     @include retina-image('../images/embed', 34px 35px, 'png', '../images/embed@2x', 'png');
-    background-color: white;
   }
   a {
     display: inline-block;
@@ -28,6 +25,19 @@
     height: 35px;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: transparent;
+    @include breakpoint(max-width 300px) {
+      margin: 2px 5px 2px;
+    }
+  }
+  @include breakpoint(max-width 450px) {
+    right: 10px;
+    bottom: 20px;
+  }
+  @include breakpoint(max-width 300px) {
+    width: 44px;
+    height: 170px;
+    background-color: transparent;
   }
   border-radius: 1px;
 }

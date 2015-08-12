@@ -31,9 +31,18 @@
       display: block;
       width: 100%;
     }
+    @include breakpoint(max-width 350px) {
+      font-size: 18px;
+    }
   }
 }
 .hint {
+  pointer-events: none;
+   -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
   font-size: 14px;
   font-weight: 400;
   position: absolute;
@@ -107,6 +116,21 @@
     padding-right: 10px;
     font-size: 15px;
     line-height: 28px;
+  }
+  @include breakpoint(max-width 350px) {
+    .mobile-hide {
+      display: none;
+    }
+  }
+  @include breakpoint(max-width 350px) {
+    .small {
+      display: none;
+    }
+  }
+  @include breakpoint(max-width 275px) {
+    .micro {
+      display: none;
+    }
   }
 }
 .back-controls {
