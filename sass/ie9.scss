@@ -1,0 +1,26 @@
+.slide-controls {
+  width: auto;
+  left: 10px;
+}
+.zoom-container {
+  background-color: transparent;
+  padding: 0px;
+  width: auto;
+  .zoom-label {
+    display: none;
+  }
+  a.zoomBtn {
+    width: 65px;
+    text-align: center;
+    &.inn {
+      border-radius: 0px 1px 1px 0px;
+    }
+    &.out {
+      border-right: 1px solid #D8D8D8;
+      border-radius: 1px 0px 0px 1px;
+    }
+  }
+  .slider-container {
+    display: none;
+  }
+}

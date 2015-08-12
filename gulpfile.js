@@ -37,7 +37,7 @@ gulp.task('js', function () {
 });
 
 gulp.task('sass', function () {
-  gulp.src('./sass/index.scss')
+  gulp.src(['./sass/index.scss', './sass/ie9.scss'])
     .pipe(sass().on('error', sass.logError))
     .pipe(sass({outputStyle: 'compressed'}))
     .pipe(prefix("last 1 version", "> 1%", "ie 8", "ie 7"))
