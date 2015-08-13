@@ -1,0 +1,48 @@
+.hint {
+  pointer-events: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+  padding: 5px 10px 8px;
+  top: 90px;
+  left: 10px;
+  z-index: 30;
+  line-height: 16px;
+  .new-muni {
+    font-weight: 400;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8), -1px 0 #673666, 0 1px #673666, 1px 0 #673666, 0 -1px #673666;
+    color: rgb(249, 255, 175);
+    span {
+      position: relative;
+      top: 50%;
+      transform: translateY(20%);
+      display: inline-block;
+      background-color: #673666;
+      height: 16px;
+      width: 16px;
+      border: 1px solid white;
+      border-radius: 50%;
+    }
+  }
+  .old-muni {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+    color: white;
+    font-weight: 400;
+    span {
+      position: relative;
+      top: 50%;
+      transform: translateY(20%);
+      border: 1px solid white;
+      display: inline-block;
+      background-color: #259AC2;
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+    }
+  }
+}

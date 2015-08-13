@@ -71,6 +71,20 @@ $(document).ready(function() {
   //document.getElementById('map-container').addEventListener('touchmove', function(event) {
   //  event.preventDefault();
   //}, false); 
+
+  $('.map-state').on('click tap', function() {
+    $('.map-state').removeClass('active');
+    $(this).addClass('active');
+  });
+
+  $('.map-state.before').on('click tap', function() {
+     $('.new-municipality.active').addClassSVG('before')
+  });
+
+  $('.map-state.after').on('click tap', function() {
+     $('.new-municipality.active').removeClassSVG('before')
+  });
+
   if (supportsTouch) {
     $('a').on('tap', function() {
       $$(this).trigger('click');
@@ -93,38 +107,14 @@ $(document).ready(function() {
 
   mapGroup.altDrag();
 
-  // $('#map-container').on('touchy-pinch', function(e, $target, data) {
-  //   noDraging = true;
-
-  //   if (e.touch.delta > 0) {
-  //     zoomInn(1.2);  
-  //   } else {
-  //     zoomOut(1.2);
-  //   };
-  //   e.stopImmediatePropagation();
-  //   e.preventDefault();
-  //   return false;
-  // });   
-
-  // $('#map-container').on('pinching', function(e,d) {
-  //   noDraging = true;
-  //   e.stopImmediatePropagation();
-  //   e.preventDefault();
-  //   console.log(e,d);
-  //   if (d.distance > 0) {
-  //     zoomInn(1.2);  
-  //   } else {
-  //     zoomOut(1.2);
-  //   };
-
-
-  // });
-
   var selectMunicipality = function(muni, animation) {
     if(muni) {
       bbox = Snap.select('#'+muni).getBBox();
       var iframeLink = $('#embed-content').val();
       $('#embed-content').val(iframeLink.replace(/\?m=(.+?)&/, '?m=' + muni + '&'));
+      $('.map-states').show();
+      $('.map-state').removeClass('active');
+      $('.map-state.after').addClass('active');
     }
     var maxWidthScale = (4000.0/bbox.width);
     var maxHeightScale = (4000.0/bbox.height);
@@ -200,6 +190,7 @@ $(document).ready(function() {
       noClicking = false;
       return;
     };
+    $('.map-states').hide();
     var iframeLink = $('#embed-content').val();
     $('#embed-content').val(iframeLink.replace(/\?m=(.+?)&/, '?m=###&'));
     $('#zoom').val(1)

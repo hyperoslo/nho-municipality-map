@@ -1,0 +1,28 @@
+.map-states {
+  display: none;
+  @include breakpoint(max-width 450px) {
+    display: none !important;
+  }
+  position: absolute;
+  right: 20px;
+  top: 100px;
+  z-index: 31;
+  a.map-state {
+    background-color: white;
+    line-height: 50px;
+    width: 65px;
+    display: inline-block;
+    text-align: center; 
+    text-decoration: none;
+    color: $font-color;
+    border-radius: 1px;
+    float: left;
+    &.active {
+      background-image: linear-gradient(-180deg, #2399C1 50%, #238EB3 100%);
+      color: white;
+    }
+    &.before {
+      border-right: 1px solid #D8D8D8;
+    }
+  }
+}

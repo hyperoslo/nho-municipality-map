@@ -45,6 +45,9 @@
   .ocean {
     stroke-opacity: 0.01;
   }
+  &.before {
+    fill-opacity: 0.01 !important;
+  }
 }
 .new-names {
   font-family: 'neosans', helvetica;
