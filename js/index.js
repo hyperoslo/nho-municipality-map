@@ -113,8 +113,10 @@ $(document).ready(function() {
       var iframeLink = $('#embed-content').val();
       $('#embed-content').val(iframeLink.replace(/\?m=(.+?)&/, '?m=' + muni + '&'));
       $('.map-states').show();
+      $('.new-municipality.before').removeClassSVG('before');
       $('.map-state').removeClass('active');
       $('.map-state.after').addClass('active');
+
     }
     var maxWidthScale = (4000.0/bbox.width);
     var maxHeightScale = (4000.0/bbox.height);

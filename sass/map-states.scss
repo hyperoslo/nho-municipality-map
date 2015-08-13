@@ -1,16 +1,23 @@
 .map-states {
   display: none;
-  @include breakpoint(max-width 450px) {
+  @include breakpoint(max-width 330px) {
     display: none !important;
   }
   position: absolute;
   right: 20px;
+  @include breakpoint(max-width 450px) {
+    right: 10px;
+  }
   top: 100px;
   z-index: 31;
   a.map-state {
     background-color: white;
     line-height: 50px;
     width: 65px;
+    @include breakpoint(max-width 360px) {
+      line-height: 45px;
+      width: 45px;
+    }
     display: inline-block;
     text-align: center; 
     text-decoration: none;
