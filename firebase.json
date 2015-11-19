@@ -1,0 +1,9 @@
+{
+  "firebase": "nho-municipality-map",
+  "public": "./dist",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
